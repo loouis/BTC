@@ -1,0 +1,67 @@
+
+#full-page-scroll{
+    background:black;
+}
+
+.home-full-page{
+	/*position: relative !important;*/
+}
+
+/*.logo p{ color:red !important;}*/
+
+
+/* --------------------------------------------------------- Homepage styling */
+.section-call-out{
+	/*display: none !important;*/
+	float: left;
+	position: initial;
+}
+body.home .section-call-out{
+	position: relative !important;
+	bottom:0;
+	float:left;
+	clear:both;
+}
+
+.home-text,.section-call-out__item, .home-text__para, .home-text__button, .home-text__title, .section-call-out{
+	opacity:1 !important;
+}
+
+.sub-nav{
+	display:none\9 !important;
+}
+
+
+/* --------------------------------------------------------- illimani page styling */
+
+#skrollr-body{
+	/*position:relative;
+	overflow:hidden;*/
+}
+
+.touch-tap-screening, .cooking-wall{
+	display: none !important;
+}
+
+.product-header__text{
+	/*z-index:9999;*/
+	top:150px !important;
+}
+
+.product-header__text__title, .product-header__text__copy{
+	visibility: visible;
+}
+.navigation__product-nav, .sub-nav, .dark-overlay{
+	background:black;
+}
+.dark-overlay{
+	opacity:0.7;
+}
+.show-product-nav, .product-header{
+	visibility: visible;
+}
+.wow{
+	visibility: visible !important;
+}
+
+

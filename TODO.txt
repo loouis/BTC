@@ -1,0 +1,21 @@
+
+
+Fixes
+- Mobile touch screen section - illimani
+- ie8 Homepage
+- SVG icons not working
+-  
+
+TO DO
+- Footer
+- Photos (Download cinema 4D)
+	Mission statement
+	Social icons
+	links
+	Phone number
+
+- 
+
+
+Mobile
+

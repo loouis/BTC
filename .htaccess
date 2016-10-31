@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+	BrowserMatch MSIE ie
+	Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
+	RewriteEngine On
+	RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
+	RewriteRule .* http://localhost/html/%1 [R=301,L]
+
+	RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*)\ HTTP/
+	RewriteRule .* %1.html [L]
+
+	# gzip compression.
+	# html, xml, css, and js:
+
+	AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript text/javascript application/javascript application/json
+	# webfonts and svg:
+	<FilesMatch "\.(ttf|otf|eot|svg)$" >
+		SetOutputFilter DEFLATE
+	</FilesMatch>
+
+
+</IfModule>
