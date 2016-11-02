@@ -1,0 +1,164 @@
+
+
+//---------------------------------------------- Fonts
+
+	// Heading font
+	$h-font:"effra", sans-serif;
+
+	// Copy font
+	$c-font:"proxima-nova", sans-serif;
+
+
+
+
+
+//---------------------------------------------- Colors
+
+
+	// ---- General colors
+
+		// Dark green
+		$d-green: #273b38;
+
+		// Dark grey
+		$d-grey: #262626;
+
+		// Copy / text grey
+		$d-grey: #565656;
+
+		// Copy / text grey
+		$l-grey: #989898;
+
+		// Lightest grey
+		$lightest-grey: #f5f5f5;
+
+		// Light blue
+		$light-blue: #1B6FEC;
+
+
+
+	// ---- Individual brand colors
+
+		// Mitap green
+		$mitap-green:#82c7ba;
+
+
+
+
+	// ---- Buttons
+
+		// Light button
+		$cta-l:#0072bc;
+
+		// Dark button
+		$cta-d:#0072bc;
+
+
+
+
+
+
+
+
+//---------------------------------------------- Extends
+
+
+	// ---- Layout
+
+		// Center align text
+		%center-text{
+			text-align:center;
+		}
+
+		// Center block
+		%center-block{
+			margin: 0 auto;
+		}
+
+		// 50% border radius
+		%circle{
+			border-radius:50%;
+		}
+
+		// Background cover
+		%cover{
+			background-size:cover;
+		}
+
+		// Position relative
+		%relative{
+			position:relative;
+		}
+
+
+
+	// ---- Color
+
+		// Lightest color - white
+		%lightest-color{
+			color:white;
+		}
+
+		%l-grey{
+			color:$l-grey;
+		}
+
+		// no-opacity
+		%no-opacity{
+			opacity:0;
+		}
+
+		// Cursor
+		%hover-cursor{
+			cursor:pointer;
+		}
+
+
+	// ---- Transition
+
+		// 35ms general transition
+		%transtition{
+			transition: all 0.35s ease-in-out;
+		}
+
+		// Reset translate
+		%reset-translate{
+			transform: translate(0px,0px) !important;
+			opacity:1;
+		}
+
+
+	// ---- Type
+
+		// Uppercase
+		%uppercase{
+			text-transform: uppercase;
+		}
+
+		// letterspacing
+		%letter-spacing{
+			letter-spacing: 1px;
+		}
+
+
+
+//---------------------------------------------- Units
+
+
+	// ---- Spacing
+		$s-10:10px;
+		$s-20:20px;
+		$s-30:30px;
+		$s-40:40px;
+		$s-50:50px;
+		$s-60:60px;
+
+
+//---------------------------------------------- screens
+
+// $s:  320px;
+//
+//
+// $m: 680px;
+//
+// $l:  1100px;

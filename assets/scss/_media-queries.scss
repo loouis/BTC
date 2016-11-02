@@ -1,0 +1,19 @@
+
+//iPad portrait
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait){
+
+	.full-screen-image img{
+		right:0;
+		bottom:0;
+		top:initial;
+		left:initial;
+		width:100%;
+	}
+
+	.home-text{
+		max-width:400px;
+	}
+}

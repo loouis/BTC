@@ -1,0 +1,37 @@
+.bpro-colours{
+	// visibility:hidden;
+  position:relative;
+
+	&__title{
+		font-size:14px;
+	}
+
+	&__colour{
+		display: inline-block;
+		margin:15px;
+
+		&__preview{
+			width:46px;
+			height:46px;
+			background:#CBCBCB;
+			border:3px solid #E8E8E8;
+			@extend %circle;
+			margin: 0 auto 5px auto;
+
+			img{
+				border-radius:50%;
+			}
+		}
+
+		&__text{
+			margin-top:10px;
+			@extend %uppercase;
+			@extend %letter-spacing;
+			font-size: 0.75em;
+
+		}
+	}
+}
+
+
+

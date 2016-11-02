@@ -1,0 +1,89 @@
+.cooking-wall{
+	padding-top:0;
+	background:black;
+	overflow:hidden;
+
+	&__cell{
+		width:100%;
+
+		@media (min-width: 700px){
+			@include span(2 of 12);
+			position:relative;
+			overflow:hidden;
+
+		}
+
+		img{
+			opacity:0.4;
+			display: block;
+
+			transition: all .3s ease-in-out;
+		}
+
+		&:hover{
+
+			img{
+				opacity:0.8;
+				transform: scale(1.05);
+			}
+		}
+
+
+		&__text{
+
+			position:absolute;
+			width: 100%;
+			// height:100%;
+			// @include vertical-align;
+			text-align:center;
+			z-index:2;
+			padding: 20% 0;
+
+			@media(min-width: 700px){
+				bottom:50px;
+				padding: 0;
+			}
+
+			// &__it-container{
+			// 	position:absolute;
+			// 	bottom:50px;
+			// }
+
+
+			&__single{
+				display:inline-block;
+				font-size:3em;
+				color:white;
+				font-weight:700;
+				line-height: 0.9em;
+				font-family: $h-font;
+
+				@media(min-width: 550px){
+					font-size:3.4em;
+				}
+
+				@media(min-width: 700px){
+					display:block;
+					font-size:2.6em;
+				}
+
+				@media(min-width: 930px){
+					font-size:3.4em;
+				}
+
+				@include screen(large){
+					font-size:4.4em;
+				}
+
+				@media(min-width: 1400px){
+					font-size:6.4em;
+				}
+
+				&__space{
+					height:60px;
+				}
+			}
+		}
+	}
+
+}

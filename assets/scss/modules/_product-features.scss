@@ -1,0 +1,155 @@
+#product-features{
+	// background:#192725;
+	background:black;
+	color:white;
+	z-index:2;
+
+	.wrapper{
+		padding:60px 20px;
+
+		@include screen(medium){
+			padding:140px 20px 100px 20px;
+		}
+	}
+
+}
+
+.p-f{
+
+	&__image{
+
+
+		@media(min-width:500px){
+			@include span(6 of 12);
+			float:left;
+		}
+
+		img{
+			width:100%;
+		}
+	}
+
+
+	&__desc{
+
+		@media(min-width:500px){
+			@include span(last 6);
+			// float:left;
+			// @include post(2);
+			// float:right;
+
+			padding-left:40px;
+
+		}
+
+		&__title{
+
+		}
+
+		&__para{
+			margin-top:1.6em;
+			// color:white;
+		}
+
+		&__small-print{
+
+		}
+	}
+
+	&__pull-out{
+		font-family:$c-font;
+
+		@media(min-width:1000px){
+			margin-top:40px;
+		}
+
+		&__con{
+			@include span(12 of 12);
+			text-align: center;
+			margin:20px 0;
+
+			// Remove margin on last item
+			&:nth-child(3){
+				margin-right:0;
+			}
+
+			@media(min-width:500px){
+				margin:15px 0;
+			}
+
+			&__icon{
+				float:left;
+				position:absolute;
+				width: 50px;
+				height: 50px;
+				// background:#1B2927;
+				border-radius:50%;
+
+				@media(min-width: 840px){
+					position:relative;
+					top: -11px;
+					width: 67px;
+					height: 67px;
+					padding:8px;
+					margin-bottom:10px;
+					// border: 2px solid #1B2927;
+				}
+			}
+
+			&__text{
+				float: left;
+				text-align: left;
+    			margin: 0 0 0 70px;
+				font-size:em(13px);
+				line-height:em(19px);
+				font-weight:100;
+				// clear:both;
+
+				@media(min-width: 840px){
+					margin: 0 0 0 20px;
+				}
+
+
+				&__title{
+					font-size:1.4em;
+					color:$mitap-green;
+					margin-bottom:10px;
+					letter-spacing: 1px;
+					line-height:1em;
+					font-weight:500;
+
+					@media (min-width:1000px){
+						font-size:2.4em;
+						margin-bottom:10px;
+						font-weight:300;
+					}
+				}
+
+				&__text{
+					letter-spacing: 1px;
+					// letter-spacing: 2px;
+					// text-transform: uppercase;
+					line-height:1.2em;
+
+					@media(min-width: 1000px){
+						letter-spacing: 2px;
+						text-transform: uppercase;
+						color: darkgrey;
+					}
+
+				}
+			}
+
+		}
+	}
+}
+
+body.mitap #product-features{
+	.wrapper{
+		padding:100px 20px 80px 20px;
+	}
+}
+
+body.illimani #product-features{
+	background:#151515;
+}

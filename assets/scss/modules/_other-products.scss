@@ -1,0 +1,48 @@
+.other-products{
+	max-width: 800px;
+    margin: 0 auto;
+    padding:60px 20px 100px 20px;
+    @include clearfix;
+
+
+	&__product{
+		position:relative;
+		@include layout( 12 0 fluid float inside);
+		@include span(12 of 12);
+		color:white;
+		overflow:hidden;
+		margin-bottom:20px;
+		
+		&:nth-child(2){
+			// background:lighten(black, 20);
+		}
+
+		@include screen(medium){
+			@include span(6 of 12);
+		}
+
+		&__image{	
+			display: inline-block;
+			max-width:350px;
+			background:black;
+			margin: 0 auto;
+    		display: block;
+
+			&:nth-child(2){
+				float:right;
+			}
+		}
+
+		&__text-container{
+			position:relative;
+			width:100%;
+			text-align:center;
+			z-index: 0;
+
+			@include screen(medium){
+				padding:0em 2em;
+			}
+
+		}
+	}
+}

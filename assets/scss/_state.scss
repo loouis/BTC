@@ -1,0 +1,100 @@
+
+// states
+
+// Main header active page link
+body.illimani .nav__link--illimani{
+	color:white;
+	font-weight:400;
+}
+
+
+
+// Stop scrolling on website body when modal is visible
+.no-scroll{
+	overflow:hidden !important;
+	// left: 0;
+ //    position: fixed;
+ //    top: 0;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+
+    @include screen(medium){
+    	position: initial;
+    	-webkit-overflow-scrolling: touch;
+    }
+}
+
+.no-touch{
+	overflow:hidden;
+	left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	 // -webkit-overflow-scrolling: touch;
+	 @include screen(medium){
+    	position: initial;
+    }
+}
+
+
+// Footer links dropdown
+.footer-links-are-open{
+	display:block;
+}
+
+
+.is-open{
+	transform:translate(250px , 0) !important;
+}
+
+.is-active{
+	padding: 6px 16px !important;
+    border-radius: 30px;
+    letter-spacing: 0.06em;
+    // background-color: #1B6FEC;
+    color:white !important;
+    // @include linearGradient(#1B6FEC, #0756CC);
+    border:1px solid #1B6FEC;
+    cursor: pointer;
+
+    &:hover{
+    	@include linearGradient(#0756CC, #1B6FEC);
+    }
+}
+
+.is-fixed{
+	top:0;
+	position:fixed;
+	width:100%;
+	z-index:90;
+	left:0;
+	padding:15px 0 15px 0;
+	background:black;
+	background: rgba(0, 0, 0, 0.9);
+	border-bottom: 1px solid #2D2D2D;
+
+	@include screen(medium){
+		padding:24px 0 0px 0;
+	}
+
+	.sub-nav__links__link{
+		color:darken(white, 30);
+	}
+
+	// Product logo animate in
+	.sub-nav__links__logo{
+		opacity:1;
+		transform: translateX(0px);
+	}
+
+	.wrapper{
+		border-bottom:none;
+	}
+
+	// Enquire button animate in
+	.sub-nav__links__enquire{
+		opacity:1;
+		transform: translateX(0px);
+	}
+
+}

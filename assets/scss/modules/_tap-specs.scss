@@ -1,0 +1,189 @@
+.tap-specs{
+	background:#252525 url('/images/tap-spec-texture-bg.png');
+
+	.wrapper{
+		max-width:1000px;
+	}
+
+	.underline{
+		background: $mitap-green;
+	}
+
+	&__heading-text{
+		width:100%;
+		margin-bottom:30px;
+
+		 @include screen(medium){
+		 	position: absolute;
+			bottom: 10px;
+			width: 30%;
+			margin-bottom:0;
+		 }
+	}
+
+	&__title{
+		@extend %lightest-color;
+	}
+
+	&__con{
+		position:relative;
+		width:100%;
+		@include clearfix;
+
+		&__image{
+			margin: 0 auto;
+			width:100%;
+
+			@include screen(medium){
+				width:70%;
+				margin: 0 auto;
+			}
+		}
+
+		&__text{
+			margin-bottom:5px;
+			margin-top:20px;
+
+
+			&__title{
+				color: $mitap-green;
+
+			}
+
+			&__para{
+				color:#696969;
+				font-size: 0.8em;
+			}
+		}
+	}
+}
+
+.spec-overview{
+	padding-top:40px;
+	margin-top:40px;
+	border-top:1px solid #353535;
+	// border-top:1px solid white;
+	@include clearfix;
+	font-family:$c-font;
+
+	ul{
+		@include clearfix;
+	}
+
+	&__col{
+
+		@include span(12 of 12);
+
+		@media (min-width: 640px){
+			@include span(3 of 12);
+		}
+
+		&:nth-child(1){
+			img{
+				text-align:center;
+				display:block;
+				margin: 0 auto 20px auto;
+				width:40%;
+
+				@include screen(medium){
+					margin: none;
+					text-align:left;
+				}
+			}
+		}
+
+		&__british-made{
+			margin: 30px auto;
+
+			@include screen(medium){
+				margin: 5px auto 0 auto;
+			}
+
+			img{
+				width:50px !important;
+				height:50px !important;
+				@extend %circle;
+				margin-bottom:8px !important;
+				opacity:0.7;
+			}
+
+			&__text{
+				color:white;
+				text-align:center;
+				font-size:0.6em;
+				text-transform: uppercase;
+    			letter-spacing: 1px;
+			}
+		}
+
+		&:nth-child(4){
+			margin-right:0;
+		}
+
+		&__item{
+			margin-bottom:22px;
+			@include clearfix;
+
+			@include screen(medium){
+				margin-bottom:14px;
+				// width:30%;
+				// float:left;
+			}
+
+
+			.item-image{
+
+				@include screen(medium){
+					width:30px;
+					height:30px;
+					float:left;
+					margin-right:10px;
+
+					//****** SVG THESE ****
+					background: url('images/tap-spec-icon-dimensions.png')no-repeat 10px 0px;
+				}
+			}
+
+			div{
+				text-align: center;
+				@include screen(medium){
+					text-align:left;
+				}
+			}
+		}
+
+		.spec-item{
+
+			&__title{
+				font-family: $h-font;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				font-size:em(15px);
+				color:white;
+
+				@include screen(medium){
+					font-size:em(12px);
+				}
+			}
+
+			&__desc{
+				font-family: $c-font;
+				font-size:0.8em;
+				margin-top: 0.5em;
+				color: #a8a8a8;
+			}
+		}
+	}
+
+	&__download-pdf{
+		display:none;
+
+    	@media(min-width: 1025px){
+    		display:block;
+    		color:white;
+				display: block;
+	    	margin:40px auto 20px auto;
+	    	text-align: center;
+    	}
+	}
+}

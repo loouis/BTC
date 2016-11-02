@@ -1,0 +1,96 @@
+.product-header{
+	background: black;
+	z-index:2;
+	height:100vh;
+	overflow:hidden;
+
+	&--light{
+		background:#232323;
+	}
+
+	@media(min-width:1100px){
+		min-height:800px;
+		// visibility: hidden;
+	}
+
+	// MiTap layout
+	&__image{
+		@include screen(12 of 12);
+
+		@include screen(medium){
+			@include span(6 of 12);
+			float:left;
+			visibility: hidden;
+		}
+	}
+
+	&__text{
+		display:none;
+		@include screen(12 of 12);
+		color:white;
+
+		@include screen(medium){
+			@include span(4 last);
+			@include pre(1);
+			float:left;
+			display:block;
+
+			@include vertical-align;
+		}
+
+		&__title{
+			font-size:5em;
+			visibility: hidden;
+		}
+
+		&__copy{
+			color:#B5B5B5;
+			font-size:1em;
+			visibility: hidden;
+
+			&__starting-from{
+				margin-top:20px;
+				color:#B5B5B5;
+			}
+		}
+	}
+}
+
+// illimani layout
+body.illimani{
+
+	.product-header{
+		background: black;
+
+		.wrapper{
+			// top: -100px;
+			position: relative;
+			padding-bottom:0;
+			padding-top:0;
+		}
+
+
+		&__text{
+			color:white;
+
+			// ** Sort this out!
+			// margin-top:250px;
+			// @include screen(12 of 12);
+
+			@include screen(medium){
+				@include span(4 of 12);
+				// margin-top:200px;
+				@include pre(1);
+				margin-right:0;
+
+				@include vertical-align;
+			}
+
+			&__copy{
+				margin-bottom:30px;
+				color:$l-grey;
+			}
+
+		}
+	}
+}

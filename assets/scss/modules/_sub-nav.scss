@@ -1,0 +1,134 @@
+.sub-nav{
+	position: fixed;
+    bottom: 0;
+    // padding: 15px 0;
+    width: 100%;
+    z-index: 10;
+    height:55px;
+	// display:none;
+	overflow:hidden;
+	background:rgba(0, 0, 0, 0.8);
+
+	@include screen(medium){
+		width:100%;
+		position:absolute;
+		z-index:90;
+		height:65px;
+		padding:24px 0 24px 0;
+		background:black;
+		background:rgba(0, 0, 0, 0.8);
+		display: block;
+		overflow:visible;
+	}
+
+	.wrapper{
+
+		@include screen(medium){
+			position:relative;
+			padding:0;
+			padding-bottom:24px;
+		}
+
+	}
+
+
+	&__links{
+		text-align:center;
+
+		&__logo{
+			position:absolute;
+			width:120px;
+			left:20px;
+			top: 16px;
+			// top:-5px;
+
+			transition: all .3s ease-in-out;
+
+			@include screen(medium){
+				position:absolute;
+				width:120px;
+				left:30px;
+				top:-5px;
+				opacity:0;
+				transform: translateX(-80px);
+			}
+
+			&--mitap{
+				width:200px;
+				top:9px;
+
+				@include screen(medium){
+					top:-10px;
+				}
+			}
+
+			&--taofont{
+				width: 180px;
+				top: 12px;
+
+				@include screen(medium){
+					top:-9px;
+					width:190px;
+				}
+			}
+		}
+
+		&__enquire{
+			position:absolute;
+			color:white;
+			float:right;
+			right:20px;
+			top:13px;
+			// opacity:0;
+			// transform: translateX(80px);
+
+			transition: all .3s ease-in-out;
+
+			@include screen(medium){
+				position:absolute;
+				right:30px;
+				top:-25px;
+				height:65px;
+				opacity:0;
+				transform: translateX(80px);
+			}
+		}
+
+		&__link{
+			display:none;
+
+			@include screen(medium){
+				display:inline-block;
+				font-family: $h-font;
+				color:darken(white, 10);
+				font-weight:300;
+				padding: 0 15px;
+				font-size: em(16px);
+				letter-spacing: 1px;
+			}
+
+
+
+			.active &{
+				color:$mitap-green !important;
+			}
+
+			&:hover{
+				color:white;
+			}
+
+			&--logo{
+				width:120px;
+				height:25px;
+				position:relative;
+				top:3px;
+				padding:0;
+				margin:0 20px;
+			}
+		}
+	}
+}
+
+.fix-sub-header{
+	overflow:hidden;
+}

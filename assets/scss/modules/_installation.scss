@@ -1,0 +1,67 @@
+.installation{
+	position:relative;
+	width:100%;
+    padding: $s-60 $s-40 $s-40 $s-40;
+    z-index: 60;
+	@extend %center-block;
+	text-align:center;
+	background:$mitap-green;	
+	
+	transform: translate(0px, 70px);
+	@extend %transtition;
+
+
+	&__title{
+		@extend %center-block;
+		font-size:em(24px);
+		font-weight:400;
+	}
+
+	&__button{
+		margin-top:40px;
+		opacity:0;
+		transition: opacity .3s ease-in-out;
+	}
+
+	&__person-image{
+		position:absolute;
+		width:110px;
+		height:110px;
+		@extend %center-block;
+		z-index:1;
+		top:-42px;
+		left:50%;
+		right:50%;
+		margin-left:-45px;
+		@extend %circle;
+		border:10px solid $mitap-green;
+
+		img{
+			@extend %circle;
+		}
+
+	}
+
+	.arrange-survey{
+		text-align: center;
+		float:none;
+	}
+
+
+	&__para{
+		max-width:600px;
+		margin-top:14px;
+		color:white;
+		font-family:$h-font;
+		font-size:1.1em;
+		@extend %center-block;
+	}
+
+	&:hover{
+		@extend %reset-translate;
+
+		.installation__button{
+			opacity:1;
+		}
+	}
+}

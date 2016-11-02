@@ -1,0 +1,17 @@
+.underline, .light-underline, .dark-underline{
+	width:45px;
+	height:1px;
+	margin: 10px 0 26px 0;
+}
+
+.light-underline{
+	background:white;
+}
+
+.dark-underline{
+	background:$mitap-green;
+}
+
+body.mitap .underline{
+	background-color:$mitap-green;
+}

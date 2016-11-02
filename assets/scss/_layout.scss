@@ -1,0 +1,95 @@
+
+// Susy layout maps
+
+// General Susy map used
+$susy: (
+  columns: 12,
+  // gutters: 1/5,
+  gutters: 1/5,
+  container: 1280px,
+  gutter-position: outside,
+  global-box-sizing: border-box,
+  // debug: (image: show),
+);
+
+$nav_layout: layout( 12 0 fluid float inside);
+
+$clients_layout: (
+  columns: 12,
+  // gutters: 1/5,
+  gutters: 1/3,
+  container: 1280px,
+  gutter-position: outside,
+  global-box-sizing: border-box,
+  // debug: (image: show),
+);
+
+// Used on the photo cooking wall
+$no-gutters: layout( 12 0 fluid float inside);
+
+
+
+main.content-container{
+  overflow-x: hidden;
+  background:black;
+  opacity:1;
+  transition:transform .2s ease-in-out, opacity .2s ease-in-out;
+
+  &.p-nav-showing{
+    transform:translateY(1%);
+    opacity:0.6;
+  }
+}
+
+section{
+	width:100%;
+	@include clearfix;
+	position:relative;
+	z-index:0;
+
+	@include screen (medium){
+		z-index:2;
+	}
+}
+
+// body.illimani, body.mitap, body.taofont{
+//   background:black;
+// }
+
+.wrapper{
+	max-width:1280px;
+	margin: 0 auto;
+	padding: 40px 20px;
+  height:100%;
+	@include container;
+
+  // Home wrapper to have extra padding on the top
+  body.home &{
+    position:initial;
+    padding:0;
+
+    @include screen(medium){
+      // padding-top:4em;
+      position:relative;
+      height:100%;
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+      padding-top:1em;
+    }
+    @include screen(large){
+      // padding-top:5em;
+    }
+  }
+}
+
+.section{
+  overflow:hidden;
+   @include screen(medium){
+    min-height:600px;
+    height:100vh;
+  }
+}
+
+body.home, body{
+  background:black;
+}
