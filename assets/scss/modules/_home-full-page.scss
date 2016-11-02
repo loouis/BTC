@@ -1,0 +1,65 @@
+.home-full-page{
+	background-size:cover;
+	color:white;
+}
+
+
+// Full screen image tag styling. Background cover equv.
+.full-screen-image{
+
+	&:after{
+		content:"";
+		position:absolute;
+		opacity:0;
+		top:0;left:0;
+		height:100%;
+		width:100%;
+		z-index: 2;
+		background:rgba(255,255,255,.07);
+
+		transition: opacity .4s ease-in-out;
+	}
+
+	@include screen(medium){
+		img{
+			min-height:100%;
+		    min-width:100%;
+		    height:auto;
+		    width:auto;
+		    position:absolute;
+		    z-index:-1;
+		    top:-50%; bottom:-50%;
+		    left:-50%; right:-20%;
+		    margin:auto;
+
+		}
+
+		@include screen(large){
+			img{
+				right:-50%;
+			}
+		}
+	}
+}
+
+.home-full-page{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	transform:scale(1);
+	transform-origin:center center;
+	transition:transform 1.5s ease-in-out;
+}
+section.section{
+	&:hover{
+		.home-full-page{
+			transform:scale(1.06);
+			transition:transform 6s ease-out;
+		}
+		.full-screen-image{
+			&:after{
+				opacity:1;
+			}
+		}
+	}
+}

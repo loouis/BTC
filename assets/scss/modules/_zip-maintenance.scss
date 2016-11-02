@@ -1,0 +1,71 @@
+.zip-maintenance{
+	border-top:1px solid #333333;
+	padding-top:40px;
+	background: #212121;
+
+	.wrapper{
+		padding-bottom:0;
+	}
+
+	&__title{
+		color:$mitap-green;
+		margin-bottom:20px;
+		font-weight: 400;
+	}
+	&__text{
+		float:left;
+		max-width:600px;
+		margin-bottom:30px;
+		color:$l-grey;
+		font-size: 1.2em;
+	}
+
+	&__services{
+		margin-top:30px;
+		float:left;
+
+		&__item{
+			float:left;
+			width:100%;
+			background:#212121;
+			padding: 40px 30px;
+
+  			background: -webkit-linear-gradient(bottom, #313131 , #232323); /* For Safari 5.1 to 6.0 */
+  			background: -o-linear-gradient(top, #313131, #232323); /* For Opera 11.1 to 12.0 */
+  			background: -moz-linear-gradient(top, #313131, #232323); /* For Firefox 3.6 to 15 */
+  			background: linear-gradient(to top, #313131 , #232323); /* Standard syntax */
+
+			&__title{
+				color:white;
+				margin-bottom:10px;
+				font-size: 1.2em;
+			}
+			&__text{
+				color:$l-grey;
+			}
+		}
+	}
+
+	@media(min-width:860px){
+
+		&__button{
+			float:right;
+		}
+
+		&__services{
+			margin-top:60px;
+
+			&__item{
+				width:33.333%;
+				height: 290px;
+				padding: 50px 40px;
+
+				background: -webkit-linear-gradient(left, #313131 , #232323); /* For Safari 5.1 to 6.0 */
+  				background: -o-linear-gradient(right, #313131, #232323); /* For Opera 11.1 to 12.0 */
+  				background: -moz-linear-gradient(right, #313131, #232323); /* For Firefox 3.6 to 15 */
+  				background: linear-gradient(to right, #313131 , #232323); /* Standard syntax */
+
+			}
+		}
+	}
+}

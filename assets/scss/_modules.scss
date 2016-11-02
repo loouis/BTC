@@ -1,0 +1,184 @@
+
+
+
+
+//---------------------------------------------------- All base styles
+// Base typography
+@import "modules/typography";
+
+// Include fonts
+@import "modules/fonts";
+
+
+//---------------------------------------------------- Home page
+
+// Full page scroll
+@import "modules/full-page";
+
+@import "modules/home-full-page";
+
+// Homepage - full scroll section
+
+/* > */	// Home illimani
+/* > */	@import "modules/home-pure-water-call-out";
+/* > */	@import "modules/home-mitap";
+/* > */	@import "modules/home-water";
+
+// Call out icons
+@import "modules/call-out-icons";
+
+// Home text
+@import "modules/home-text";
+
+
+
+//---------------------------------------------------- Our clients
+
+// Our clients
+@import "modules/our-clients";
+
+
+//---------------------------------------------------- All product single page
+
+
+// Product header
+@import "modules/product-features";
+
+// Unit controls
+@import "modules/unit-controls";
+
+// Tasted pure water?
+@import "modules/tasted-pure-water";
+
+// Tap specs / drawings
+@import "modules/tap-specs";
+
+// Clients testimonials
+@import "modules/clients-testimonials";
+
+// Buy product bullet points and enquire
+@import "modules/buy-bullet-points";
+/* > */	@import "modules/bullet-points";
+/* > */	@import "modules/promise";
+/* > */	@import "modules/buy-product-shout-out";
+
+// Buy product bullet points and enquire
+@import "modules/more-products";
+/* > */	@import "modules/other-products";
+/* > */	@import "modules/product-brief-desc";
+
+// Cooking image wall images
+@import "modules/cooking-image-wall";
+
+// Installation
+@import "modules/installation";
+
+// Water test
+@import "modules/water-test";
+
+
+//---------------------------------------------------- Mitap product single page
+
+
+// Product header
+@import "modules/product-header";
+
+// Brief product opening
+@import "modules/brief-product-opening";
+
+// Mitap heating elements
+@import "modules/heating-elements";
+
+// Mitap Kitchen layout
+@import "modules/kitchen-layouts";
+
+// Mitap Colour/material preview
+@import "modules/bpro-colours";
+
+
+
+//---------------------------------------------------- illimani product single page
+
+
+// Product header
+// @import "modules/product-features--illimani";
+
+// illimani touch tap screening
+@import "modules/touch-tap-screening";
+
+
+
+
+//---------------------------------------------------- Global styling
+
+// Global main header
+@import "modules/main-header";
+
+// Hamburger menu icon
+@import "modules/hamburger-menu-icon";
+
+// Product Sub navigation
+@import "modules/sub-nav";
+
+// Section title
+@import "modules/section-title";
+
+// Home one page scroll sections
+@import "modules/home-one-page";
+
+// Button styles
+@import "modules/button-styles";
+
+// Underline
+@import "modules/underline";
+
+// Person headshot
+@import "modules/person-headshot";
+
+// Social links
+@import "modules/social-links";
+
+// Scroll to next section
+@import "modules/scroll-to-next-section";
+
+// Animate - wow.js scrolling
+@import "modules/animate";
+
+
+
+//---------------------------------------------------- Light product
+
+// Light product container
+@import "modules/light-product-con";
+
+// Light product scroll text
+@import "modules/product-scroll-text";
+
+// Zip maintenance
+@import "modules/zip-maintenance";
+
+
+//---------------------------------------------------- Footer
+
+
+// Footer
+@import "modules/footer";
+/* > */	@import "modules/copyright";
+/* > */	@import "modules/footer-site-links-button";
+
+// Above footer mission statement
+@import "modules/above-footer-mission-stat";
+
+// Modal
+@import "modules/modal";
+
+// Wufoo forms
+@import "modules/wufoo-form";
+
+
+// Wow.js animations css
+@import "modules/wow";
+
+
+// Flickity carousel styling
+// @import "modules/Flickity";

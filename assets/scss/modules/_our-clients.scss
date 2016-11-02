@@ -1,0 +1,60 @@
+.our-clients{
+	margin-top:55px;
+	background:#f7f7f7;
+	text-align:center;
+
+	@include screen(medium){
+		margin-top:65px;
+	}
+
+	.wrapper{
+
+		// max-width:800px;
+	}
+
+
+
+	&__title{
+		color:black;
+		margin-bottom:20px;
+	}
+
+	&__text{
+
+	}
+
+	&__logos{
+		margin-top:1.6em;
+
+		@include screen(medium){
+			margin-top:2.6em;
+		}
+
+		&__logo{
+			@include layout($clients_layout);
+
+			@include span(6 of 12 after);
+			margin-bottom:0.4em;
+			// margin-bottom: 0.005em;
+
+			&:nth-child(2n+2) {
+				@include last;
+			}
+
+			@include screen(medium){
+				@include span(3 of 12 after);
+				margin-bottom:1.1em;
+
+				&:nth-child(2n+2) {
+					float:left;
+					margin-right: 2.12766%;
+				}
+
+
+				&:nth-child(4n+4) {
+					@include last;
+				}
+			}
+		}
+	}
+}

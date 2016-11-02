@@ -1,0 +1,284 @@
+.client-testimonials, .home-clients{
+	// background: whitesmoke;
+	background: url('../images/clients-background.jpg');
+	background-size:cover;
+	padding: 0;
+
+	@include screen(medium){
+		padding:60px 0 0 0;
+	}
+
+
+	// .section-title{
+	// 	margin-bottom:3em;
+	// }
+}
+.home-clients{
+	padding:60px 0 0 0;
+}
+
+
+.testimonial-container{
+	position:relative;
+	max-width:800px;
+	margin: 0 auto;
+	padding:40px 10px 80px 10px;
+	background:white;
+	text-align:center;
+
+	@include screen(medium){
+		padding:40px 80px 80px 80px;
+	}
+
+	&:before{
+		content:"";
+		position:absolute;
+		width:80px;
+		height:80px;
+		background:lighten(grey, 40);
+		bottom:0;
+		right:0;
+	}
+
+	&--home{
+		background:none;
+		padding-top:0;
+		padding-bottom:50px;
+
+		&:before{
+			display:none;
+		}
+	}
+
+}
+
+.testimonial-nav{
+	text-align:center;
+	// margin-bottom:70px;
+
+	.testi-people{
+		position:relative;
+		top:-38px;
+		display:none;
+
+		@include screen(medium){
+			display:block;
+		}
+
+		&__company-logo{
+			position:relative;
+			// width: 96px;
+			height: 40px;
+			// margin-top: 17px;
+			opacity:0;
+			// background: red;
+
+			p{
+				position:absolute;
+				bottom:3px;
+				color:white;
+				line-height: 19px;
+    			font-size: 14px;
+    			left:-11px;
+    			white-space: nowrap;
+			}
+
+			img{
+				border-radius:0px !important;
+				opacity:0;
+			}
+		}
+
+		&--home{
+			padding-left:0;
+			// top: 28px;
+    		z-index: 5;
+		}
+
+		&__person{
+			display:inline-block;
+			width:80px;
+			height:80px;
+			border-radius:50%;
+			margin:0 14px;
+			transform:scale(0.8);
+			background:black;
+
+			@extend %transtition;
+
+			img{
+				width:101%;
+				opacity:.65;
+				border-radius:50%;
+				display:block;
+			}
+
+			&:hover{
+				// .testi-people__company-logo{
+				// 	opacity:1;
+				// }
+			}
+
+			&.active{
+				position:relative;
+				transform:scale(1);
+				background:white;
+				border:4px solid white;
+
+				img{
+					opacity:1;
+				}
+
+				.testi-people__company-logo{
+					opacity:1;
+				}
+
+			}
+		}
+	}
+}
+
+
+.see-all-clients{
+	position: static;
+	@extend %center-block;
+	color:white;
+	@extend %uppercase;
+	@extend %letter-spacing;
+	border:none !important;
+	font-size: 0.7em;
+    right: 40px;
+    top: 32px;
+    opacity: 1;
+    border:1px solid rgba(0,0,0,0);
+    z-index:200;
+
+    @include screen(medium){
+    	position: absolute;
+    	opacity: 0.6;
+    }
+    body.home &{
+    	@include screen(medium){
+    		position:static;
+    	}
+    	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+			position:absolute;
+			top:-17px;
+		}
+    }
+}
+
+.see-all-clients-container{
+	position:relative;
+	bottom:0;
+	width:100%;
+	padding:22px 0 22px 0;
+	background:rgba(0,0,0,.45);
+
+	body.home &{
+    	@include screen(medium){
+    		background:none;
+    	}
+    }
+
+	&:hover .see-all-clients{
+		opacity:1;
+		border:1px solid white !important;
+	}
+
+	@include screen(medium){
+		padding:0px 0 22px 0;
+	}
+}
+
+.testimonial-cell{
+
+	&__quote{
+		color:white;
+		font-size:em(18px);
+		line-height:1.4em;
+		font-style:italic;
+
+		@include screen(medium){
+			font-size:em(28px);
+		}
+
+		&__name{
+			position:relative;
+			margin-top:46px;
+			display: block;
+
+
+			&:after{
+				content:"";
+				position:absolute;
+				top:-28px;
+				left:50%;
+				right:50%;
+				width:40px;
+				height:1px;
+				margin-left:-20px;
+				background:white;
+			}
+		}
+
+		// &--home{
+		// 	font-size:em(24px);
+		// 	color:white;
+		// }
+	}
+}
+
+.testimonial-slider{
+
+	&__slide{
+
+		// &__company-logo{
+		// 	width:140px;
+		// 	height:60px;
+		// 	margin: 0 auto 20px auto;
+		// }
+
+		.dark-underline{
+			margin-top:30px;
+			height:1px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+
+
+
+.clients{
+	background:#151515;
+	color:white;
+	background: url('/images/clients-background.jpg');
+	background-size:cover;
+
+	&__image{
+
+		@include screen(medium){
+			max-width:600px;
+			height:450px;
+			margin:0 auto;
+		}
+	}
+
+	&__text{
+		padding:0 20px;
+		text-align:center;
+
+		&__title{
+			margin-bottom:30px;
+			font-size:em(42px);
+			color:white;
+
+			@include screen(medium){
+				margin-bottom:1em;
+				font-size:em(62px);
+			}
+		}
+	}
+}

@@ -1,0 +1,177 @@
+.home-water{
+	background:#151515;
+	color:white;
+
+	padding:60px 20px;
+
+	@include screen(medium){
+		padding:0;
+	}
+
+	p{
+		// color:white;
+	}
+
+	&__image{
+
+		@include screen(medium){
+			max-width:600px;
+			height:450px;
+			margin:0 auto;
+			background:red;
+		}
+	}
+
+	&__text{
+		position:relative;
+		text-align:center;
+		max-width:680px;
+		margin: 0 auto;
+		z-index:1;
+		top: 40%;
+
+    	@include screen(medium){
+    		transform: translateY(-50%);
+    	}
+
+		&__title{
+			font-size:2.8em;
+			text-transform: uppercase;
+			margin-bottom:30px;
+			line-height: 1em;
+			@extend %transtition;
+
+			@include screen(medium){
+				opacity:0;
+				font-size:5em;
+				transform: translate(0px,35px);
+			}
+			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+				font-size:4em;
+			}
+		}
+
+		&__para{
+			font-size: 0.9em;
+			margin-bottom:40px;
+			color:#8A8A8A;
+			@extend %transtition;
+
+			@include screen(medium){
+				opacity:0;
+				// @extend %l-grey;
+				padding-bottom: $s-30;
+				font-size:1.1em;
+				transform: translate(0px,35px);
+				// @extend %transtition;
+			}
+
+			&__dr-rob-link{
+				position:relative;
+				color: white;
+				font-weight:400;
+				display:inline-block;
+				cursor:pointer;
+
+
+				&:after{
+					content:"";
+					position:absolute;
+					bottom:2px;
+					left:0;
+					width:100%;
+					height:1px;
+					background:#8A8A8A;
+				}
+
+				&:hover{
+					color:white;
+
+					&:after{
+						background:$light-blue;
+					}
+				}
+			}
+
+		}
+
+		&__water-test-button{
+			width:100%;
+			padding:20px 0;
+			color:black;
+			background:$mitap-green;
+			border-radius:30px;
+			font-family: $c-font;
+			letter-spacing: 1px;
+    		font-size: 0.8em;
+			text-transform: uppercase;
+			display:block;
+			@extend %transtition;
+
+			@include screen(medium){
+				width: initial;
+				padding: 20px 40px;
+				display:initial;
+				opacity:0;
+				transform: translate(0px,35px);
+			}
+
+			// margin:15px;
+			// transform: translate(0px,50px);
+			// @extend %no-opacity;
+			// @extend %transtition;
+		}
+	}
+
+	.section-call-out{
+		width: 360px;
+		left: 50%;
+		right: 50%;
+		margin-left: -180px;
+	}
+
+	&__water{
+		position:absolute;
+		height:360px;
+		width:400px;
+		z-index:0;
+
+		&--left{
+			top:50%;
+			left:100px;
+			// @extend %no-opacity;
+			// transform: translate(0px,85px);
+			// @extend %transtition;
+		}
+
+		&--right{
+			top:100px;
+			right:100px;
+			// @extend %no-opacity;
+			// transform: translate(0px,120px);
+			// @extend %transtition;
+		}
+	}
+}
+
+
+// Home slide animations
+.active .home-water__text{
+	&__title{
+		opacity:1;
+		transform: translate(0px,0px);
+		transition-delay: .95s;
+	}
+
+	&__para{
+		opacity:1;
+		transition-delay: 1.25s;
+		transform: translate(0px,0px);
+	}
+
+	&__water-test-button{
+		opacity:1;
+		transition-delay: 1.4s;
+		transform: translate(0px,0px);
+	}
+}

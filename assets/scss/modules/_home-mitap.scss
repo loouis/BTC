@@ -1,0 +1,25 @@
+.home-full-page{
+	background:#151515;
+	color:white;
+
+
+	p{
+		// color:white;
+	}
+
+	&__image{
+
+		@include screen(medium){
+			@include span(5 of 12);
+			@include pre(1);
+		}
+	}
+
+	&__text{
+
+
+		// @include screen(medium){
+		// 	@include span(3 last);
+		// }
+	}
+}

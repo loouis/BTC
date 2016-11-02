@@ -1,0 +1,37 @@
+.above-footer-mission-stat{
+	padding:50px 0 30px 0;
+	background: $mitap-green;
+	margin-bottom:0px;
+	
+	// @include screen($m){
+	// 	margin-bottom:480px;
+	// }
+
+	&__title{
+		position: relative;
+		color: #C8C8C8;
+		text-transform: uppercase;
+		background: #FFFFFF;
+		padding: 5px;
+		z-index: 1;
+		letter-spacing: 1px;
+		width: 100px;
+		font-size: 0.8em;
+		margin: 0 auto 25px auto;
+	}
+
+	&__text{
+		max-width:700px;
+		margin:0 auto;
+		text-align:center;
+		color:white;
+		font-size: 1.1em;
+		line-height:30px;
+		font-family: $h-font;
+		color:#565656;
+	}
+
+	.wrapper{
+		padding:0 20px;
+	}
+}

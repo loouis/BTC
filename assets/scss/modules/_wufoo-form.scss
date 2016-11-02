@@ -1,0 +1,320 @@
+.wufoo{
+	font-family:$h-font;
+}
+
+.wufoo #header{
+	text-align:center;
+}
+
+.wufoo #header h2{
+	display:none !important;
+}
+
+#form2 .info{
+	display:none !important;
+}
+
+#instruct136, #title136{
+	text-align:center;
+}
+#instruct136{
+	border-bottom: 1px solid #F5F5F5;
+    padding-bottom: 30px;
+	color: #565656;
+	font-weight: 100;
+}
+
+.wufoo li{
+	margin-bottom:4px;
+}
+
+input.medium, select.medium{
+	width:100%;
+}
+
+.wufoo input.text, .wufoo textarea.textarea {
+	padding:5px 5px 5px 0;
+}
+
+// .wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select, form li{
+// 	text-align:center;
+// }
+
+.wufoo input.text, .wufoo textarea.textarea{
+	border: none;
+    outline: none;
+    border-top: 0;
+    border-bottom: 2px solid #E4E4E4;
+    background: none;
+    padding-bottom: 8px;
+    font-weight:300;
+}
+
+.wufoo textarea.textarea{
+	line-height:22px;
+}
+
+.wufoo li.focused input.text{
+	border-bottom: 2px solid $mitap-green;
+	color:#565656;
+}
+
+.wufoo li.focused{
+	background:none;
+}
+
+// error border bottom
+.wufoo li.error input.text{
+	border-bottom: 2px solid red;
+}
+
+
+select{
+	background: none;
+    padding-left: 10px !important;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 48px;
+    font-weight: 300 !important;
+    font-family: $h-font !important;
+    border: 2px solid #E4E4E4;
+    -webkit-appearance: none;
+}
+
+.wufoo label.desc, .wufoo legend.desc{
+	opacity:1;
+	text-transform:uppercase;
+	font-size: em(13px);
+	font-weight:400;
+	margin-bottom:8px;
+	// transition: opacity .3s ease-in-out;
+}
+
+li.notStacked div span{
+	margin: 0 0px 0 0 !important;
+}
+
+input.checkbox, input.radio{
+	top: 3px;
+	position:relative;
+	text-align:center;
+}
+
+// Subject label full opacity (1)
+// .wufoo #fo1li21 label.desc, .wufoo #fo1li21 legend.desc, #title25, #title13, #title132, #title134, #title127, #title126{
+// 	opacity:1;
+// 	margin-bottom:8px;
+// }
+
+.safari select.select{
+	font-size: 100% !important;
+	font-size: em(16px) !important;
+}
+
+.wufoo li.focused label.desc, .wufoo li.focused legend.desc, .wufoo li.focused div, .safari .wufoo li.focused input.file, #title21, #title25, #title13, #title132, #title134, #title127, #title126 {
+	color:$mitap-green;
+}
+
+.wufoo li.focused label.desc, .wufoo li.focused .wufoo legend.desc{
+	opacity:1;
+}
+
+#title132, #title134, #title127, #title126{
+	font-size: 1em;
+    margin-bottom: 15px;
+}
+#fo2li13{
+	margin-top:20px;
+}
+
+form span.req {
+	color: #E4E4E4 !important;
+}
+
+.wufoo li.focused span label{
+	color:black !important;
+}
+.wufoo #fo2li132, .wufoo .res-or-com, .wufoo #fo1li126, .wufoo #fo1li127{
+	text-align:center;
+}
+
+
+.wufoo .res-or-com fieldset, .wufoo #fo1li126 fieldset{
+    border-bottom: 1px solid #F5F5F5;
+    padding-bottom: 20px;
+    margin: 10px 0 10px 0;
+}
+.wufoo #fo2li132 div, .wufoo .res-or-com div, .wufoo #fo1li126 div, .wufoo #fo1li127 div{
+	display:inline-block;
+}
+
+// Remove margin on the third icon
+.wufoo #fo1li127 span:nth-child(4), .wufoo #fo1li126 span:nth-child(4){
+	margin-right:0;
+}
+
+input[type="submit"]{
+	width:100%;    
+	width: 100%;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    background-color: #82C7BA;
+    padding: 12px 0;
+    font-family: $h-font;
+    color: white;
+	-webkit-appearance: none !important;
+	border-radius: 0;
+}
+
+#saveForm, input, form li.buttons input, #currentPage{
+	-webkit-appearance: none !important;
+	 border-radius: 0;
+}
+
+
+
+
+
+
+
+
+// Errors
+
+form li.error{
+	background:none !important;
+}
+
+
+
+
+
+// Radio buttons
+
+/*
+    Hide the original radios and checkboxes
+    (but still accessible)
+
+    :not(#foo) > is a rule filter to block browsers
+                 that don't support that selector from
+                 applying rules they shouldn't
+
+*/
+li:not(#foo) > fieldset > div > span > input[type='radio'],
+li:not(#foo) > fieldset > div > span > input[type='checkbox'] {
+
+    /* Hide the input, but have it still be clickable */
+    opacity: 0;
+
+    float: left;
+    width: 18px;
+}
+
+li:not(#foo) > fieldset > div > span > input[type='radio'] + label,
+li:not(#foo) > fieldset > div > span > input[type='checkbox'] + label {
+    margin: 0;
+    clear: none;
+
+    /* Left padding makes room for image */
+    // padding: 5px 0 4px 24px;
+
+    /* Make look clickable because they are */
+    cursor: pointer;
+
+    background: url(../images/modal-product_users--small.jpg) top center no-repeat;
+}
+
+/*
+    Change from unchecked to checked graphic
+*/
+li:not(#foo) > fieldset > div > span > input[type='radio']:checked + label {
+    background-image: url(../images/modal-product_users--small-active.jpg);
+    color: $mitap-green !important;
+}
+li:not(#foo) > fieldset > div > span > input[type='checkbox']:checked + label {
+    background-image: url(../images/modal-product_users--small-active.jpg);
+    color: $mitap-green !important;
+}
+
+#fo2li132 .choice, .res-or-com .choice, #fo1li127 .choice, #fo1li126 .choice{
+	height: 150px;
+    width: 120px;
+    padding-top: 106px;
+	text-align: center;
+}
+
+
+// Change image for main contact
+
+// NORMAL
+
+	// Residential
+	.wufoo #fo1li126 fieldset div span:nth-of-type(1)>input[type='radio'] + label{
+		background:url(../images/modal-residential-icon.jpg)top center no-repeat !important;
+	}
+
+	// Commerical
+	.wufoo #fo1li126 fieldset div span:nth-of-type(2)>input[type='radio'] + label{
+		background:url(../images/modal-commercial-icon.jpg)top center no-repeat !important;
+	}
+
+	// Support
+	.wufoo #fo1li126 fieldset div span:nth-of-type(3)>input[type='radio'] + label{
+		background:url(../images/modal-support-icon.jpg)top center no-repeat !important;
+	}
+
+	// Product-illimani
+	.wufoo #fo1li127 fieldset div span:nth-of-type(1)>input[type='radio'] + label{
+		background:url(../images/modal-product-illimani-icon.jpg)top center no-repeat !important;
+	}
+
+	// Product-mitap
+	.wufoo #fo1li127 fieldset div span:nth-of-type(2)>input[type='radio'] + label{
+		background:url(../images/modal-product-mitap-icon.jpg)top center no-repeat !important;
+	}
+
+	// Product-taofont
+	.wufoo #fo1li127 fieldset div span:nth-of-type(3)>input[type='radio'] + label{
+		background:url(../images/modal-product-taofont-icon.jpg)top center no-repeat !important;
+	}
+
+
+
+
+// ACTIVE
+
+	// Residential
+	.wufoo #fo1li126 fieldset div span:nth-of-type(1)>input[type='radio']:checked + label{
+		background:url(../images/modal-residential-icon--active.jpg)top center no-repeat !important;
+	}
+
+	// Commercial
+	.wufoo #fo1li126 fieldset div span:nth-of-type(2)>input[type='radio']:checked + label{
+		background:url(../images/modal-commercial-icon--active.jpg)top center no-repeat !important;
+	}
+
+	// Support
+	.wufoo #fo1li126 fieldset div span:nth-of-type(3)>input[type='radio']:checked + label{
+		background:url(../images/modal-support-icon--active.jpg)top center no-repeat !important;
+	}
+
+	// Product-illimani
+	.wufoo #fo1li127 fieldset div span:nth-of-type(1)>input[type='radio']:checked + label{
+		background:url(../images/modal-product-illimani-icon--active.jpg)top center no-repeat !important;
+	}
+
+	// Product-mitap
+	.wufoo #fo1li127 fieldset div span:nth-of-type(2)>input[type='radio']:checked + label{
+		background:url(../images/modal-product-mitap-icon--active.jpg)top center no-repeat !important;
+	}
+
+	// Product-taofont
+	.wufoo #fo1li127 fieldset div span:nth-of-type(3)>input[type='radio']:checked + label{
+		background:url(../images/modal-product-taofont-icon--active.jpg)top center no-repeat !important;
+	}
+
+
+
+
+

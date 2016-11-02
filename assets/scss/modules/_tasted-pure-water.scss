@@ -1,0 +1,86 @@
+#tasted-pure-water{
+	background:black;
+	color:white;
+	overflow:hidden;
+	padding-bottom:80px;
+
+	@include screen(medium){
+		padding-bottom:200px;
+	}
+
+	// body.illimani &{
+	// 	background:black;
+	// }
+
+}
+
+.pure-water{
+
+	hgroup{
+		width:100%;
+
+		@include screen(medium){
+			max-width:600px;
+			margin: 0 auto;
+			margin-bottom: 340px;
+			padding-top:100px;
+		}
+	}
+
+	&__title{
+		font-size: 2.8em;
+		text-transform: uppercase;
+		margin-bottom:30px;
+
+		@include screen(medium){
+			font-size: 5em;
+		}
+	}
+
+	&__para{
+		@extend %l-grey;
+		margin-bottom: $s-30;
+		font-size:1.1em;
+	}
+	&__water-facts{
+		position:relative;
+		padding:0 3px;
+		color:white;
+		cursor:pointer;
+		display: inline-block;
+		z-index: 20;
+
+		&:after{
+			content:"";
+			position:absolute;
+			bottom:0px;
+			left:0;
+			height:1px;
+			width:100%;
+			background:#989893;
+		}
+
+		&:hover{
+			&:after{
+				background:white;
+			}
+		}
+	}
+}
+
+.water-splash-2, .water-splash-1{
+	position:absolute;
+	z-index:0;
+}
+
+.water-splash-1{
+	display:none;
+
+	@include screen(medium){
+		display:block;
+	}
+}
+
+.water-splash-2{
+	right:0;
+}

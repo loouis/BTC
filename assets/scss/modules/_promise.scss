@@ -1,0 +1,44 @@
+.promise{
+	// background:lighten($l-grey, 38);
+	@include clearfix;
+	padding:$s-20 0px;
+
+	@include screen(medium){
+		padding:20px 0em;
+		max-width: 530px;
+    	margin: 0 auto;
+	}
+
+	&__item{
+		@include span (12 of 12);
+		margin-bottom:$s-30;
+
+		@include screen(medium){
+			width:33.2%;
+			margin-bottom:0;
+		}
+
+		&__icon{
+			width:90px;
+			height:90px;
+			position:relative;
+			top:0px;
+			@extend %circle;
+			margin:10px auto;
+			// border:2px solid $mitap-green;
+
+			@include screen(medium){
+
+			}
+		}
+
+		&__text{
+			font-family:$c-font;
+			font-size:em(13px);
+			padding-top:8px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color:#C1C1C1;
+		}
+	}
+}

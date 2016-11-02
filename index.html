@@ -12,169 +12,264 @@
     <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"><!--[if IE]><![endif]-->
-    <link rel="stylesheet" href="css/style.css"><!--[if lte IE 9]>
+    <link rel="stylesheet" href="assets/css/style.css"><!--[if lte IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <link rel="stylesheet" href="css/ie8-and-down.css"><![endif]-->
-    <script src="js/respond.min.js"></script>
+    <link rel="stylesheet" href="assets/css/ie8-and-down.css"><![endif]-->
+    <script src="assets/js/respond.min.js"></script>
     <script>document.createElement( "picture" )</script>
-    <script src="js/picturefill.min.js" async></script>
+    <script src="assets/js/picturefill.min.js" async></script>
   </head>
   <body class="home">
-    <header role="banner" class="main-header">
+    <header role="banner" class="main-header" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
       <div class="main-nav">
         <div class="wrapper">
-          <div class="logo"> <a href="./" class="link-fade">
-              <p>THE BOILING TAP COMPANY</p></a></div>
-          <div class="navigation">
-            <div class="navigation__menu-button">
-              <div class="navigation__menu-button__icon"></div>
-              <p class="navigation__menu-button__text">View products</p>
-            </div>
+          <div class="logo">
+            <a href="../../" class="link-fade">
+              <p>THE BOILING TAP COMPANY</p>
+            </a>
           </div>
-          <div class="nav__link--contact call-modal-click--main-contact">Contact</div>
+          <ul class="navigation">
+            <li class="navigation__products-link"><p>Products</p></li>
+            <li class="navigation__menu-button__text" itemprop="name"><a>Pure water</a></li>
+            <li class="navigation__menu-button__text" itemprop="name"><a>Customers</a></li>
+            <li class="call-modal-click--main-contact"><p>Contact</p></li>
+          </ul>
         </div>
       </div>
       <div class="navigation__product-nav">
         <div class="wrapper">
           <div class="navigation__product-nav__nav__link--contact call-modal-click--main-contact">Contact</div>
-          <ul class="nav"><a href="./illimani.html" class="link-fade">
-              <li class="nav__link nav__link--illimani"> <img src="images/product-nav--illimani.png" alt="">
-                <p class="nav__link__text">illimani</p>
-              </li></a><a href="./mitap.html" class="link-fade">
-              <li class="nav__link nav__link--mitap"> <img src="images/product-nav--mitap.png" alt="">
-                <p class="nav__link__text">MiTap</p>
-              </li></a><a href="./taofont.html" class="link-fade">
-              <li class="nav__link nav__link--taofont"> <img src="images/product-nav--taofont.png" alt="">
-                <p class="nav__link__text">TaoFont</p>
-              </li></a></ul>
+
+          <ul class="nav">
+            <li class="nav__link" itemprop="name">
+              <a href="../../products/illimani/" class="link-fade" itemprop="url">
+                <img src="../../assets/images/product-nav--illimani.png" alt="illimani" itemprop="ImageObject">
+                <p class="nav__link__text" itemprop="name">illimani</p>
+              </a>
+            </li>
+
+            <li class="nav__link" itemprop="name">
+              <a href="../../products/mitap/" class="link-fade" itemprop="url">
+                <img src="../../assets/images/product-nav--mitap.png" alt="MiTap" itemprop="ImageObject">
+                <p class="nav__link__text" itemprop="name">MiTap</p>
+              </a>
+            </li>
+
+            <li class="nav__link" itemprop="name">
+              <a href="../../products/taofont/" class="link-fade" itemprop="url">
+                <img src="../../assets/images/product-nav--wall-hung-bolier.png" alt="TBTC Wall Hung Boiler" itemprop="ImageObject">
+                <p class="nav__link__text" itemprop="name">TBTC Wall Hung Boiler</p>
+              </a>
+            </li>
+
+            <li class="nav__link" itemprop="name">
+              <a href="../../products/taofont/" class="link-fade" itemprop="url">
+                <img src="../../assets/images/product-nav--taofont.png" alt="TaoFont" itemprop="ImageObject">
+                <p class="nav__link__text" itemprop="name">TaoFont</p>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
-    <div id="full-page-scroll">
-      <section class="section home-illimani">
-        <div class="home-full-page home-full-page--mitap">
-          <div class="home-full-page__image full-screen-image">
-            <picture>
-            	<!--[if IE 9]><video style="display: none;"><![endif]-->
-            	<source srcset="images/product-illimani-image--large.jpg"   media="(min-width: 800px)">
-            	<source srcset="images/product-illimani-image--medium.jpg 1x, images/product-illimani-image--medium2x.jpg 2x" media="(min-width: 760px)">
-            	<!--[if IE 9]></video><![endif]-->
-            	<!--[if lt IE 9]>
-            	<img src="images/product-illimani-image--large.jpg" alt="illimani boiling and chilled water tap depense - boiling tap company">
-            	<![endif]-->
-            	<!--[if !lt IE 9]><!-->
-            	<img srcset="images/home-illimani-image--small2x.jpg" alt="illimani boiling and chilled water tap depense - boiling tap company">
-            	 <!-- <![endif]-->
-            </picture>
 
+    <main class="content-container">
 
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="home-text"><a href="./illimani.html">
-              <h1 class="home-text__title">illimani</h1>
-              <p class="home-text__para">Our UK designed and assembled illimani Boiling and Chilled taps eliminate lime-scale and produces probably the purest water on the planet.</p></a><a href="./illimani.html">
-              <div class="home-text__button">View product</div></a></div>
-          <div class="section-call-out">
-            <div class="section-call-out__item">
-              <div class="section-call-out__item__icon"><img src="images/icon-home--hot.png" alt=""></div>
-              <p class="section-call-out__item__text">Boiling water</p>
-            </div>
-            <div class="section-call-out__item">
-              <div class="section-call-out__item__icon"><img src="images/icon-home--chilled.png" alt=""></div>
-              <p class="section-call-out__item__text">Chilled water</p>
-            </div>
-            <div class="section-call-out__item">
-              <div class="section-call-out__item__icon"><img src="images/icon-home--pure-water.png" alt=""></div>
-              <p class="section-call-out__item__text">Purified water</p>
-            </div>
-            <div class="section-call-out__item">
-              <div class="section-call-out__item__icon"><img src="images/icon-home--energy.png" alt=""></div>
-              <p class="section-call-out__item__text">Energy saving</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section home-mitap">
-        <div class="home-full-page home-full-page--mitap">
-          <div class="home-full-page__image full-screen-image">
-            <picture>
-            	<!--[if IE 9]><video style="display: none;"><![endif]-->
-            	<source srcset="images/product-mitap-image--large.jpg 1x" media="(min-width: 800px)">
-            	<source srcset="images/product-mitap-image--medium.jpg 1x, images/product-mitap-image--medium2x.jpg 2x" media="(min-width: 760px)">
-            	<!--[if IE 9]></video><![endif]-->
-            	<!--[if lt IE 9]>
-            	<img src="images/product-mitap-image--large.jpg" alt="Boiling tap company - Mitap kitchen tap">
-            	<![endif]-->
-            	<!--[if !lt IE 9]><!-->
-            	<img srcset="images/home-mitap-image--small2x.jpg" alt="Boiling tap company - Mitap kitchen tap">
-            	 <!-- <![endif]-->
-            </picture>
-
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="home-text"><a href="./mitap.html">
-              <h1 class="home-text__title">MiTap</h1>
-              <p class="home-text__para">Have you ever had the choose to configure your perfect tap? We made MiTap energy saving</p></a><a href="./mitap.html">
-              <div class="home-text__button">View product</div></a></div>
-          <div class="section-call-out">
-            <div class="section-call-out__item">
-              <div class="section-call-out__item__icon"><img src="images/icon-home--hot.png" alt=""></div>
-              <p class="section-call-out__item__text">Boiling water</p>
-            </div>
-            <div class="section-call-out__item">
-              <div class="section-call-out__item__icon"><img src="images/icon-home--pure-water.png" alt=""></div>
-              <p class="section-call-out__item__text">Purified water</p>
-            </div>
-            <div class="section-call-out__item">
-              <div class="section-call-out__item__icon"><img src="images/home-icon--temp-set.png" alt=""></div>
-              <p class="section-call-out__item__text">Temperature set  </p>
-            </div>
-            <div class="section-call-out__item">
-              <div class="section-call-out__item__icon"><img src="images/home-icon--timer.png" alt=""></div>
-              <p class="section-call-out__item__text">Dual timer preset</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section home-taofont">
-        <div class="wrapper">
+      <section class="section home-illimani" itemscope itemtype="http://schema.org/Product" data-scroll-index="0">
+        <a href="/products/illimani" itemprop="url">
           <div class="home-full-page home-full-page--mitap">
-            <div class="home-full-page__image full-screen-image">
+            <div class="home-full-page__image full-screen-image wow fadeIn">
               <picture>
               	<!--[if IE 9]><video style="display: none;"><![endif]-->
-              	<source srcset="images/product-taofont-image--large.jpg 1x" media="(min-width: 800px)">
-              	<source srcset="images/product-taofont-image--medium.jpg 1x, images/product-taofont-image--medium2x.jpg 2x" media="(min-width: 760px)">
+              	<source srcset="assets/images/product-illimani-image--large.jpg"   media="(min-width: 800px)">
+              	<source srcset="assets/images/product-illimani-image--medium.jpg 1x, images/product-illimani-image--medium2x.jpg 2x" media="(min-width: 760px)">
               	<!--[if IE 9]></video><![endif]-->
               	<!--[if lt IE 9]>
-              	<img src="images/product-taofont-image--large.jpg" alt="Boiling tap company - TaoFont kitchen worktop font">
+              	<img src="/assets/images/product-illimani-image--large.jpg" alt="illimani boiling and chilled water tap depense - boiling tap company">
               	<![endif]-->
               	<!--[if !lt IE 9]><!-->
-              	<img srcset="images/home-taofont-image--small2x.jpg" alt="Boiling tap company - TaoFont kitchen worktop font">
+              	<img srcset="assets/images/home-illimani-image--small2x.jpg" itemprop=”image” alt="illimani boiling and chilled water tap depense - boiling tap company">
+              	 <!-- <![endif]-->
+              </picture>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="home-text-con home-text">
+              <div class="home-text-con__inner-con">
+                <h1 class="home-text__title wow fadeInLeft" itemprop=”name”>illimani</h1>
+                <div data-wow-delay=".65s" class="dark-underline fadeInLeft wow"></div>
+                <p class="home-text__para wow fadeInLeft" itemprop="description" data-wow-delay=".15s">Our UK designed and assembled illimani Boiling and Chilled taps eliminate lime-scale and produces probably the purest water on the planet.</p>
+                <!-- <div class="home-text__button">View product</div></a></div> -->
+              </div>
+            </div>
+            <div class="section-call-out">
+              <div class="section-call-out__item wow fadeInLeft">
+                <div class="section-call-out__item__icon"><img src="/assets/images/icon-home--hot.png" alt=""></div>
+                <p class="section-call-out__item__text">Boiling water</p>
+              </div>
+              <div class="section-call-out__item wow fadeInLeft" data-wow-delay=".15s">
+                <div class="section-call-out__item__icon"><img src="/assets/images/icon-home--chilled.png" alt=""></div>
+                <p class="section-call-out__item__text">Chilled water</p>
+              </div>
+              <div class="section-call-out__item wow fadeInLeft" data-wow-delay=".35s">
+                <div class="section-call-out__item__icon"><img src="/assets/images/icon-home--pure-water.png" alt=""></div>
+                <p class="section-call-out__item__text">Purified water</p>
+              </div>
+              <div class="section-call-out__item wow fadeInLeft" data-wow-delay=".55s">
+                <div class="section-call-out__item__icon"><img src="/assets/images/icon-home--energy.png" alt=""></div>
+                <p class="section-call-out__item__text">Energy saving</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#0" class="home-scroll-next-section" data-scroll-nav="1"></a>
+      </section>
+
+      <section class="section home-mitap" itemscope itemtype="http://schema.org/Product" data-scroll-index="1">
+        <a href="/products/mitap/" itemprop="url">
+          <div class="home-full-page home-full-page--mitap">
+            <div class="home-full-page__image full-screen-image wow fadeIn">
+              <picture>
+              	<!--[if IE 9]><video style="display: none;"><![endif]-->
+              	<source srcset="assets/images/product-mitap-image--large.jpg 1x" media="(min-width: 800px)">
+              	<source srcset="assets/images/product-mitap-image--medium.jpg 1x, images/product-mitap-image--medium2x.jpg 2x" media="(min-width: 760px)">
+              	<!--[if IE 9]></video><![endif]-->
+              	<!--[if lt IE 9]>
+              	<img src="/assets/images/product-mitap-image--large.jpg" alt="Boiling tap company - Mitap kitchen tap">
+              	<![endif]-->
+              	<!--[if !lt IE 9]><!-->
+              	<img srcset="assets/images/home-mitap-image--small2x.jpg" itemprop=”image” alt="Boiling tap company - Mitap kitchen tap">
               	 <!-- <![endif]-->
               </picture>
 
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="home-text-con home-text">
+              <div class="home-text-con__inner-con">
+                <h1 class="home-text__title wow fadeInLeft" itemprop=”name”>MiTap</h1>
+                <div data-wow-delay=".65s" class="dark-underline fadeInLeft wow"></div>
+                <p class="home-text__para wow fadeInLeft" itemprop=”description”>Have you ever had the choice to configure your perfect tap? We made MiTap energy saving</p>
+                <!-- <div class="home-text__button">View product</div></a></div> -->
+              </div>
+              <div class="section-call-out">
+                <div class="section-call-out__item fadeInLeft wow">
+                  <div class="section-call-out__item__icon"><img src="/assets/images/icon-home--hot.png" alt=""></div>
+                  <p class="section-call-out__item__text">Boiling water</p>
+                </div>
+                <div class="section-call-out__item fadeInLeft wow" data-wow-delay=".15s">
+                  <div class="section-call-out__item__icon"><img src="/assets/images/icon-home--pure-water.png" alt=""></div>
+                  <p class="section-call-out__item__text">Purified water</p>
+                </div>
+                <div class="section-call-out__item fadeInLeft wow" data-wow-delay=".35s">
+                  <div class="section-call-out__item__icon"><img src="/assets/images/home-icon--temp-set.png" alt=""></div>
+                  <p class="section-call-out__item__text">Temperature set  </p>
+                </div>
+                <div class="section-call-out__item fadeInLeft wow" data-wow-delay=".55s">
+                  <div class="section-call-out__item__icon"><img src="/assets/images/home-icon--timer.png" alt=""></div>
+                  <p class="section-call-out__item__text">Dual timer preset</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#0" class="home-scroll-next-section" data-scroll-nav="2"></a>
+      </section>
+
+      <section class="section home-boiler" itemscope itemtype="http://schema.org/Product" data-scroll-index="2">
+        <a href="/products/tbtc-wall-hung-boiler" itemprop="url">
+          <div class="home-full-page home-full-page--mitap">
+            <div class="home-full-page__image full-screen-image wow fadeIn">
+              <picture>
+              	<!--[if IE 9]><video style="display: none;"><![endif]-->
+              	<source srcset="../../assets/images/product-wall-boiler-image--large.jpg 1x" media="(min-width: 800px)">
+              	<source srcset="assets/images/product-mitap-image--medium.jpg 1x, images/product-mitap-image--medium2x.jpg 2x" media="(min-width: 760px)">
+              	<!--[if IE 9]></video><![endif]-->
+              	<!--[if lt IE 9]>
+              	<img src="/assets/images/product-mitap-image--large.jpg" alt="Boiling tap company - Mitap kitchen tap">
+              	<![endif]-->
+              	<!--[if !lt IE 9]><!-->
+              	<img srcset="assets/images/home-mitap-image--small2x.jpg" itemprop=”image” alt="Boiling tap company - Mitap kitchen tap">
+              	 <!-- <![endif]-->
+              </picture>
 
             </div>
           </div>
-          <div class="home-text"><a href="./taofont.html">
-              <h1 class="home-text__title">TaoFont</h1>
-              <p class="home-text__para">The Taofont is stylish, made in high grade stainless steel. Comes in Matt or polished finish and you don’t need a sink.</p></a><a href="./taofont.html">
-              <div class="home-text__button">View product</div></a></div>
-        </div>
+          <div class="wrapper">
+            <div class="home-text-con home-text">
+              <div class="home-text-con__inner-con">
+                <h1 class="home-text__title wow fadeInLeft" itemprop=”name”>TBTC Wall Hung Boiler</h1>
+                <div data-wow-delay=".65s" class="dark-underline fadeInLeft wow"></div>
+                <p class="home-text__para fadeInLeft wow" itemprop=”description” data-wow-delay=".15s">Have you ever had the choice to configure your perfect tap? We made MiTap energy saving</p>
+              </div>
+              <div class="section-call-out">
+                <div class="section-call-out__item fadeInLeft wow">
+                  <div class="section-call-out__item__icon"><img src="/assets/images/icon-home--hot.png" alt=""></div>
+                  <p class="section-call-out__item__text">Boiling water</p>
+                </div>
+                <div class="section-call-out__item fadeInLeft wow" data-wow-delay=".15s">
+                  <div class="section-call-out__item__icon"><img src="/assets/images/icon-home--pure-water.png" alt=""></div>
+                  <p class="section-call-out__item__text">Purified water</p>
+                </div>
+                <div class="section-call-out__item fadeInLeft wow" data-wow-delay=".35s">
+                  <div class="section-call-out__item__icon"><img src="/assets/images/home-icon--temp-set.png" alt=""></div>
+                  <p class="section-call-out__item__text">Temperature set  </p>
+                </div>
+                <div class="section-call-out__item fadeInLeft wow" data-wow-delay=".55s">
+                  <div class="section-call-out__item__icon"><img src="/assets/images/home-icon--timer.png" alt=""></div>
+                  <p class="section-call-out__item__text">Dual timer preset</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#0" class="home-scroll-next-section" data-scroll-nav="3"></a>
       </section>
-      <section class="section home-water">
+
+
+      <section class="section home-taofont" itemscope itemtype="http://schema.org/Product" data-scroll-index="3">
+        <a href="/products/taofont/" itemprop="url">
+          <div class="home-full-page home-full-page--mitap">
+            <div class="home-full-page__image full-screen-image fadeIn">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="assets/images/product-taofont-image--large.jpg 1x" media="(min-width: 800px)">
+                <source srcset="assets/images/product-taofont-image--medium.jpg 1x, images/product-taofont-image--medium2x.jpg 2x" media="(min-width: 760px)">
+                <!--[if IE 9]></video><![endif]-->
+                <!--[if lt IE 9]>
+                <img src="/assets/images/product-taofont-image--large.jpg" alt="Boiling tap company - TaoFont kitchen worktop font">
+                <![endif]-->
+                <!--[if !lt IE 9]><!-->
+                <img srcset="assets/images/home-taofont-image--small2x.jpg" itemprop=”image” alt="Boiling tap company - TaoFont kitchen worktop font">
+                 <!-- <![endif]-->
+              </picture>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="home-text-con home-text">
+              <div class="home-text-con__inner-con">
+                <h1 class="home-text__title wow fadeInLeft" itemprop=”name”>TaoFont</h1>
+                <div data-wow-delay=".65s" class="dark-underline fadeInLeft wow"></div>
+                <p class="home-text__para wow fadeInLeft" itemprop=”description” data-wow-delay=".15s">The Taofont is stylish, made in high grade stainless steel. Comes in Matt or polished finish and you don’t need a sink.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#0" class="home-scroll-next-section" data-scroll-nav="4"></a>
+      </section>
+
+      <!-- <section class="section home-water">
         <div class="wrapper">
           <div class="home-water__text">
             <h1 class="home-water__text__title">Have you ever tasted pure water?</h1>
             <p class="home-water__text__para">Filtered water is not pure. Pure Water tastes crisp, clean and eliminates the plethora of contaminants found in the water supply, we guarantee the water purity because we care. Do you care enough to find out how.</p>
             <div class="home-water__text__button home-water__text__water-test-button call-modal-click--water-test">see the water test</div>
           </div>
-          <div class="home-water__water home-water__water--left"><img src="images/water-splash-1.png" alt=""></div>
-          <div class="home-water__water home-water__water--right"><img src="images/water-splash-2.png" alt=""></div>
+          <div class="home-water__water home-water__water--left"><img src="/assets/images/water-splash-1.png" alt=""></div>
+          <div class="home-water__water home-water__water--right"><img src="/assets/images/water-splash-2.png" alt=""></div>
         </div>
-      </section>
+      </section> -->
+
       <section class="section home-clients">
         <div class="wrapper">
           <div class="clients__text">
@@ -201,27 +296,29 @@
           </div>
           <div class="see-all-clients-container">
             <nav class="testimonial-nav">
-              <ul class="testi-people testi-people--home"><a href="" data-slide-index="0" class="testi-people__person"><img src="images/testi-headeshot-shane-wheeler.jpg" alt="">
+              <ul class="testi-people testi-people--home"><a href="" data-slide-index="0" class="testi-people__person"><img src="/assets/images/testi-headeshot-shane-wheeler.jpg" alt="">
                   <div class="testi-people__company-logo">
                     <p>Shane wheeler</p>
-                  </div></a><a href="" data-slide-index="1" class="testi-people__person"><img src="images/testi-headeshot-wayne-foster.jpg" alt="">
+                  </div></a><a href="" data-slide-index="1" class="testi-people__person"><img src="/assets/images/testi-headeshot-wayne-foster.jpg" alt="">
                   <div class="testi-people__company-logo">
                     <p>Wayne Foster</p>
-                  </div></a><a href="" data-slide-index="2" class="testi-people__person"><img src="images/testimonial-headshots--kevin-game.jpg" alt="">
+                  </div></a><a href="" data-slide-index="2" class="testi-people__person"><img src="/assets/images/testimonial-headshots--kevin-game.jpg" alt="">
                   <div class="testi-people__company-logo">
                     <p>Kevin Game</p>
-                  </div></a><a href="" data-slide-index="3" class="testi-people__person"><img src="images/testimonial-headshots--actionaid.jpg" alt="">
+                  </div></a><a href="" data-slide-index="3" class="testi-people__person"><img src="/assets/images/testimonial-headshots--actionaid.jpg" alt="">
                   <div class="testi-people__company-logo">
                     <p>Action aid</p>
                   </div></a></ul>
-            </nav><a href="./our-clients.html">
-              <button class="see-all-clients btn-border">See clients list</button></a>
+            </nav>
+            <a href="./our-clients.html">
+              <button class="see-all-clients btn-border">See clients list</button>
+            </a>
           </div>
         </div>
       </section>
-    </div>
+    </main>
     <div class="water-test water-test--modal modal">
-      <div class="water-test__modal-close-button"><img src="images/modal-close-cross-button.jpg" alt="close modal button"></div>
+      <div class="water-test__modal-close-button"><img src="/assets/images/modal-close-cross-button.jpg" alt="close modal button"></div>
       <section class="water-wrapper">
         <article class="water-test__text">
           <h3 class="water-test__text__title">Water test</h3>
@@ -230,25 +327,26 @@
         <div class="water-test-slider__navigation">
           <p class="water-test-slider__navigation__seconds">Seconds</p>
           <ul class="water-test-slider__navigation__list"><a href="" data-slide-index="0" class="water-test-slider__navigation__list__item">
-              <p>20</p></a><a href="" data-slide-index="1" class="water-test-slider__navigation__list__item">
-              <p>40</p></a><a href="" data-slide-index="2" class="water-test-slider__navigation__list__item">
-              <p>60</p></a><a href="" data-slide-index="3" class="water-test-slider__navigation__list__item">
-              <p>90</p></a></ul>
+            <p>20</p></a><a href="" data-slide-index="1" class="water-test-slider__navigation__list__item">
+            <p>40</p></a><a href="" data-slide-index="2" class="water-test-slider__navigation__list__item">
+            <p>60</p></a><a href="" data-slide-index="3" class="water-test-slider__navigation__list__item">
+            <p>90</p></a>
+          </ul>
         </div>
         <div class="water-test__slider-container">
           <div class="water-test__slider">
             <div class="water-test__slider__slide">
               <ul class="water-testing">
                 <li class="water-testing__cell">
-                  <div class="water-testing__cell__image"><img src="images/water-test__filtered-water-1.jpg" alt=""></div>
+                  <div class="water-testing__cell__image"><img src="/assets/images/water-test__filtered-water-1.jpg" alt=""></div>
                   <p class="water-testing__cell__title">Filtered</p>
                 </li>
                 <li class="water-testing__cell">
-                  <div class="water-testing__cell__image"><img src="images/water-test__bottled-water-1.jpg" alt=""></div>
+                  <div class="water-testing__cell__image"><img src="/assets/images/water-test__bottled-water-1.jpg" alt=""></div>
                   <p class="water-testing__cell__title">Bottled</p>
                 </li>
                 <li class="water-testing__cell">
-                  <div class="water-testing__cell__image"><img src="images/water-test__pure-water-1.jpg" alt=""></div>
+                  <div class="water-testing__cell__image"><img src="/assets/images/water-test__pure-water-1.jpg" alt=""></div>
                   <p class="water-testing__cell__title">Purified</p>
                 </li>
               </ul>
@@ -256,15 +354,15 @@
             <div class="water-test__slider__slide">
               <ul class="water-testing">
                 <li class="water-testing__cell">
-                  <div class="water-testing__cell__image"><img src="images/water-test__filtered-water-2.jpg" alt=""></div>
+                  <div class="water-testing__cell__image"><img src="/assets/images/water-test__filtered-water-2.jpg" alt=""></div>
                   <p class="water-testing__cell__title">Filtered</p>
                 </li>
                 <li class="water-testing__cell">
-                  <div class="water-testing__cell__image"><img src="images/water-test__bottled-water-2.jpg" alt=""></div>
+                  <div class="water-testing__cell__image"><img src="/assets/images/water-test__bottled-water-2.jpg" alt=""></div>
                   <p class="water-testing__cell__title">Bottled</p>
                 </li>
                 <li class="water-testing__cell">
-                  <div class="water-testing__cell__image"><img src="images/water-test__pure-water-1.jpg" alt=""></div>
+                  <div class="water-testing__cell__image"><img src="/assets/images/water-test__pure-water-1.jpg" alt=""></div>
                   <p class="water-testing__cell__title">Purified</p>
                 </li>
               </ul>
@@ -272,15 +370,15 @@
             <div class="water-test__slider__slide">
               <ul class="water-testing">
                 <li class="water-testing__cell">
-                  <div class="water-testing__cell__image"><img src="images/water-test__filtered-water-3.jpg" alt=""></div>
+                  <div class="water-testing__cell__image"><img src="/assets/images/water-test__filtered-water-3.jpg" alt=""></div>
                   <p class="water-testing__cell__title">Filtered</p>
                 </li>
                 <li class="water-testing__cell">
-                  <div class="water-testing__cell__image"><img src="images/water-test__bottled-water-3.jpg" alt=""></div>
+                  <div class="water-testing__cell__image"><img src="/assets/images/water-test__bottled-water-3.jpg" alt=""></div>
                   <p class="water-testing__cell__title">Bottled</p>
                 </li>
                 <li class="water-testing__cell">
-                  <div class="water-testing__cell__image"><img src="images/water-test__pure-water-1.jpg" alt=""></div>
+                  <div class="water-testing__cell__image"><img src="/assets/images/water-test__pure-water-1.jpg" alt=""></div>
                   <p class="water-testing__cell__title">Purified</p>
                 </li>
               </ul>
@@ -288,15 +386,15 @@
             <div class="water-test__slider__slide">
               <ul class="water-testing">
                 <li class="water-testing__cell">
-                  <div class="water-testing__cell__image"><img src="images/water-test__filtered-water-4.jpg" alt=""></div>
+                  <div class="water-testing__cell__image"><img src="/assets/images/water-test__filtered-water-4.jpg" alt=""></div>
                   <p class="water-testing__cell__title">Filtered</p>
                 </li>
                 <li class="water-testing__cell">
-                  <div class="water-testing__cell__image"><img src="images/water-test__bottled-water-4.jpg" alt=""></div>
+                  <div class="water-testing__cell__image"><img src="/assets/images/water-test__bottled-water-4.jpg" alt=""></div>
                   <p class="water-testing__cell__title">Bottled</p>
                 </li>
                 <li class="water-testing__cell">
-                  <div class="water-testing__cell__image"><img src="images/water-test__pure-water-1.jpg" alt=""></div>
+                  <div class="water-testing__cell__image"><img src="/assets/images/water-test__pure-water-1.jpg" alt=""></div>
                   <p class="water-testing__cell__title">Purified</p>
                 </li>
               </ul>
@@ -339,65 +437,7 @@
       </section>
     </aside>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script src="js/libs/one-page-scroll.js"></script>
-    <script>
-      // Full page scroll on working only on 480px above
-      $(document).ready(function() {
-      	/* ****** !!!  Add window resize and init and kill the full page scroll !!! ************/
-      	if(screen.width < 480) {
-      	// do any 480 width stuff here, or simply do nothing
-      	return;
-      	} else {
-      	$('#full-page-scroll').fullpage({
-
-      	    //Navigation
-      	    anchors:['illimani', 'mitap', 'taofont','pure-water','clients'],
-      	    navigation: true,
-      	    navigationPosition: 'right',
-      	    navigationTooltips: ['illimani', 'MiTap', 'TaoFont', 'Water', 'Clients'],
-      	    showActiveTooltip: false,
-
-      	    // //Scrolling
-      	    css3: true,
-      	    scrollingSpeed: 1200,
-      	    autoScrolling: true,
-      	    fitToSection: true,
-
-      	    // Test the scroll bar on IE
-      	    scrollBar: true,
-      	    easing: 'easeInOutExpo',
-      	    easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
-      	    loopBottom: false,
-      	    loopTop: false,
-      	    loopHorizontal: true,
-      	    continuousVertical: true,
-      	    normalScrollElements: null,
-      	    scrollOverflow: false,
-      	    touchSensitivity: 5,
-      	    normalScrollElementTouchThreshold: 5,
-
-      	    // //Accessibility
-      	    keyboardScrolling: true,
-      	    animateAnchor: true,
-
-      	    // //Design
-      	    controlArrows: true,
-      	    verticalCentered: false,
-      	    resize : false,
-      	    paddingTop: '3em',
-      	    paddingBottom: '10px',
-      	    sectionsColor: ['#000000', '#000000', '#000000', '#000000', '#000000'],
-      	    responsiveWidth: 0,
-      	    responsiveHeight: 0,
-
-      	    //Custom selectors
-      	    sectionSelector: '.section',
-      	    slideSelector: '.slide',
-      	    });
-      	}
-      });
-    </script><script type="text/javascript" src="js/global.min.js"></script>
+    </script><script type="text/javascript" src="assets/js/global-min.js"></script>
     <script>(function(d) {var config = {kitId: 'fpo3oru',scriptTimeout: 3000},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);</script><script type="text/javascript" src="http://peak-ip-54.com/js/21971.js"></script>
     <noscript><img src="http://peak-ip-54.com/images/track/21971.png?trk_user=21971&trk_tit=jsdisabled&trk_ref=jsdisabled&trk_loc=jsdisabled" height="0px" width="0px" style="display:none;" /></noscript>
     <script>

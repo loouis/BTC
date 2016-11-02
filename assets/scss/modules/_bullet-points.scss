@@ -1,0 +1,27 @@
+.bullet-points{
+
+	&__point{
+		padding:1em 0em 0.8em 0em;
+		border-bottom:1px solid rgba(0,0,0,0.05);
+
+		@include screen(medium){
+			// padding:1em 2em 0.8em 2em;
+		}
+
+		&:nth-child(1){
+			margin-top:1.5em;
+		}
+
+		&__title{
+			font-size:em(13px);
+			font-weight:200;
+			text-transform: uppercase;
+		}
+
+		&__text{
+			margin-top:5px;
+			color:darken(white, 50);
+		}
+
+	}
+}
