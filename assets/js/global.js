@@ -85,6 +85,8 @@ var mainMenuProductNav = $('.navigation__product-nav'),
 
 	});
 
+
+
 	// $('.call-modal-click--main-contact, .navigation__product-nav__nav__link--contact').click(function(e){
 	// 	e.preventDefault();
 	// 	$('.modal--main-contact').toggleClass("is-visible");
@@ -115,6 +117,16 @@ var mainMenuProductNav = $('.navigation__product-nav'),
 	// 	ModalOverlay();
 	// 	modalFurniture();
 	// });
+
+
+
+	// -------------------------------------------------------------------- // Footer
+
+		$('button.footer__links-btn').on('click', function(){
+			$('.footer__links-container').toggleClass("footer__links-container--links-visible");
+		});
+
+
 
 	// Home water test modal
 	$('.call-modal-click--water-test').click(function(){
@@ -176,10 +188,6 @@ var mainMenuProductNav = $('.navigation__product-nav'),
 
 
 
-// -------------------------------------------------------------------- // Footer
-
-
-
 // -------------------------------------------------------------------- Fixed sub header
 
 
@@ -196,6 +204,11 @@ $(window).on("resize scroll", function(){
 	} else {
 		fixedHeader.removeClass("is-fixed");
 	}
+});
+
+// Mobile Hamburger click
+$('.main-nav__mobile-hamburger').on('click', function(){
+	$('.main-header').toggleClass("main-header--mobile-visible");
 });
 
 

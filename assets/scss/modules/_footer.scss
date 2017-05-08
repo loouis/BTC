@@ -1,13 +1,156 @@
 .footer{
 	position:relative;
 	font-family:$c-font;
-	background: #161F1D;
+	background: #0e0e0e;
 	color:white;
 	width:100%;
 	padding-bottom:80px;
+	overflow: hidden;
 
 	@include screen(medium){
 		padding-bottom:0px;
+	}
+
+	&__water-splashes{
+		position:absolute;
+		width:100%;
+		top:0;
+		opacity:0.6;
+
+
+		&--1{
+			position: absolute;
+			width:400px;
+			left:10%;
+			top:0px;
+
+			img{
+				transform:rotate(-20deg);
+				width:100%;
+				height:auto;
+			}
+		}
+
+		&--2{
+			position: absolute;
+			width:600px;
+			right:10%;
+			top:0px;
+		}
+
+	}
+
+	&__links-container{
+		position:relative;
+
+		&--links-visible{
+
+			.footer{
+
+				&__links{
+					visibility: visible;
+					opacity:1;
+					transform: translateY(0);
+
+					&:after{
+						transform: translateY(0);
+					}
+				}
+
+				&__links-btn{
+
+					i{
+						transform:rotate(180deg);
+					}
+				}
+			}
+		}
+	}
+
+
+	&__links-btn{
+		display: block;
+		margin: 40px auto;
+		border: 1px solid #757575;
+		padding:19px 45px 18px 45px;
+		border-radius:30px;
+		cursor: pointer;
+
+		p{
+			float:left;
+			color:white;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		i{
+			float:left;
+			margin-left:15px;
+			width:15px;
+			height:15px;
+			transition: transform .25s ease-in-out;
+		}
+	}
+
+	&__links{
+		visibility: hidden;
+		opacity:0;
+		position: absolute;
+		border-radius:6px;
+		bottom:0;
+		width:480px;
+		background:white;
+		padding:20px;
+		left:50%;
+		right:50%;
+		bottom:73px;
+		margin-left:-240px;
+		transform: translateY(30px);
+
+		transition: all .25s ease-in-out;
+
+		&:after{
+			content:"";
+			position:absolute;
+			width: 0;
+  		height: 0;
+  		border-left: 20px solid transparent;
+  		border-right: 20px solid transparent;
+  		border-top: 20px solid white;
+			bottom:-18px;
+			z-index: 2;
+			left:50%;
+			right:50%;
+			margin-left:-15px;
+			transform: translateY(-15px);
+			transition: transform .3s ease-in-out;
+		}
+
+		ul{
+			float:left;
+			width:220px;
+			padding:20px;
+
+			li{
+				&:nth-child(1){
+					margin-bottom:15px;
+					color:black;
+				}
+				a{
+					color:#898989;
+				}
+			}
+		}
+
+		&__pages{
+			float:left;
+			margin-left:60px;
+		}
+
+		&__link{
+			padding-bottom:14px;
+			color:#898989;
+		}
 	}
 
 	// @include screen($m){
@@ -17,54 +160,12 @@
 	// 	z-index:-2;
 	// }
 
-	&__happy-clients{
-		max-width:900px;
-		margin: 20px auto 0px auto;
-		@include clearfix;
-
-		@include screen(medium){
-			margin: 20px auto 40px auto;
-		}
-
-		&__cell{
-			text-align:center;
-			width:100%;
-			float:left;
-			margin-bottom:20px;
-
-			@include screen(medium){
-				// width:50%;
-				margin-bottom:0px;
-			}
-
-			p{
-				text-transform: uppercase;
-	    		color: white;
-	    		letter-spacing: 1px;
-			}
-
-			&__number{
-				font-size:3.2em;
-				font-weight:100;
-				color:$mitap-green;
-
-    			@include screen(medium){
-					font-size:6em;
-					line-height:1em;
-					// padding-top: 60px;
-					// line-height: 0;
-    			}
-			}
-		}
-	}
-
-
 	.wrapper{
 		padding-bottom: 20px;
 		position:relative;
 
 		@include screen(medium){
-			padding-top:60px;
+			padding-top:80px;
 		}
 	}
 
@@ -78,12 +179,6 @@
 		font-size: 0.75em;
 		margin-top:15px;
 		text-align:center;
-
-		@include screen(medium){
-			float:left;
-			margin-top:0;
-			text-align:left;
-		}
 	}
 
 	.social-links{
@@ -96,46 +191,14 @@
 	}
 
 	&__small-footer{
-		border-top:1px solid #334642;
 		padding-top:30px;
-		position:relative;
-		width:100%;
-		left:0;
 
 		@include screen(medium){
 			padding:25px 0 5px 0;
 		}
 
-
-
 		&__copyright{
-			position:relative;
-
-			@include screen(medium){
-				position:absolute;
-				left:0;
-				top:24px;
-			}
-		}
-
-
-		&__page-links{
-			text-align:center;
-
-			&__link{
-				display: inline-block;
-				margin:0 10px 20px 10px;
-				color:#909090;
-				font-family: $c-font;
-				font-weight: 300;
-				letter-spacing: 1px;
-    			font-size: 0.9em;
-
-    			@include screen(medium){
-    				margin:0 10px;
-    			}
-
-			}
+			text-align: center;
 		}
 	}
 

@@ -258,6 +258,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/boiler-buy-image.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/assets\/images\/boiler-buy-image.png",
+		"outputAbbreviatedPath": "\/assets\/images\/boiler-buy-image.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/british-made.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1631,7 +1642,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 62217,
+		"initialSize": 131804,
 		"inputAbbreviatedPath": "\/assets\/images\/illimani-side-tap.png",
 		"outputAbbreviatedPath": "\/assets\/images\/illimani-side-tap.png",
 		"outputPathIsOutsideProject": 0,
@@ -2100,6 +2111,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/other-products--illimani.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25059,
+		"inputAbbreviatedPath": "\/assets\/images\/other-products--illimani.png",
+		"outputAbbreviatedPath": "\/assets\/images\/other-products--illimani.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/other-products--mitap.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2111,6 +2133,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/other-products--mitap.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 148035,
+		"inputAbbreviatedPath": "\/assets\/images\/other-products--mitap.png",
+		"outputAbbreviatedPath": "\/assets\/images\/other-products--mitap.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/other-products--taofont.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2118,6 +2151,17 @@
 		"initialSize": 20332,
 		"inputAbbreviatedPath": "\/assets\/images\/other-products--taofont.jpg",
 		"outputAbbreviatedPath": "\/assets\/images\/other-products--taofont.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/other-products--taofont.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 294481,
+		"inputAbbreviatedPath": "\/assets\/images\/other-products--taofont.png",
+		"outputAbbreviatedPath": "\/assets\/images\/other-products--taofont.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2289,7 +2333,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 33516,
+		"initialSize": 37825,
 		"inputAbbreviatedPath": "\/assets\/images\/product-nav--illimani.png",
 		"outputAbbreviatedPath": "\/assets\/images\/product-nav--illimani.png",
 		"outputPathIsOutsideProject": 0,
@@ -2300,7 +2344,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 37668,
+		"initialSize": 68162,
 		"inputAbbreviatedPath": "\/assets\/images\/product-nav--mitap.png",
 		"outputAbbreviatedPath": "\/assets\/images\/product-nav--mitap.png",
 		"outputPathIsOutsideProject": 0,
@@ -2311,7 +2355,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 131749,
+		"initialSize": 137595,
 		"inputAbbreviatedPath": "\/assets\/images\/product-nav--taofont.png",
 		"outputAbbreviatedPath": "\/assets\/images\/product-nav--taofont.png",
 		"outputPathIsOutsideProject": 0,
@@ -2333,7 +2377,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 155466,
 		"inputAbbreviatedPath": "\/assets\/images\/product-nav--wall-hung-bolier.png",
 		"outputAbbreviatedPath": "\/assets\/images\/product-nav--wall-hung-bolier.png",
 		"outputPathIsOutsideProject": 0,
@@ -2344,7 +2388,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 131807,
+		"initialSize": 160089,
 		"inputAbbreviatedPath": "\/assets\/images\/product-nav-test.png",
 		"outputAbbreviatedPath": "\/assets\/images\/product-nav-test.png",
 		"outputPathIsOutsideProject": 0,
@@ -2410,7 +2454,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 227716,
+		"initialSize": 373400,
 		"inputAbbreviatedPath": "\/assets\/images\/product-wall-boiler-image--large.jpg",
 		"outputAbbreviatedPath": "\/assets\/images\/product-wall-boiler-image--large.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -2773,7 +2817,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 394405,
 		"inputAbbreviatedPath": "\/assets\/images\/wall-hung-boiler--front-view.png",
 		"outputAbbreviatedPath": "\/assets\/images\/wall-hung-boiler--front-view.png",
 		"outputPathIsOutsideProject": 0,
@@ -2937,7 +2981,7 @@
 	"\/assets\/js\/global-min.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/js\/global-min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/global-min-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -3764,22 +3808,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/scss\/modules\/_modal.scss",
 		"outputAbbreviatedPath": "\/assets\/scss\/css\/_modal.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/assets\/scss\/modules\/_more-products.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/scss\/modules\/_more-products.scss",
-		"outputAbbreviatedPath": "\/assets\/scss\/css\/_more-products.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -5630,20 +5658,20 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/customers\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/customers\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/our-clients.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/our-clients.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -5707,7 +5735,7 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/js\/libs\/wow.min.js",
+			"linkedFileAbbreviatedPath": "\/assets\/js\/libs\/scrollit.js",
 			"position": 1,
 			"type": 0
 			},
@@ -5725,7 +5753,7 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/js\/libs\/scrollit.js",
+			"linkedFileAbbreviatedPath": "\/assets\/js\/libs\/wow.min.js",
 			"position": 4,
 			"type": 0
 			}

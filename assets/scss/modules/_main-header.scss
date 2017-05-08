@@ -17,7 +17,6 @@ header.main-header{
 	.main-nav{
 		width:100%;
 		position:absolute;
-		height:55px;
 		font-family: $h-font;
 		font-size:em(16px);
 		letter-spacing: 1px;
@@ -26,9 +25,50 @@ header.main-header{
 		background:black;
 		border-bottom: 1px solid rgba(255,255,255,0.15);
 
+		&__mobile-hamburger{
+			position:absolute;
+			right:0;
+			top:0;
+			height:55px;
+			width:75px;
+			padding:0;
+			// background:red;
+
+			i{
+				float:right;
+				display:block;
+				position:relative;
+				width:20px;
+				height:20px;
+				margin-right:20px;
+				// background:blue;
+
+				&:before, &:after{
+					content:"";
+					position:absolute;
+					width:20px;
+					height:2px;
+					background:white;
+					left:0;
+				}
+				&:before{
+					top:0;
+				}
+				&:after{
+					top:10px;
+				}
+			}
+
+
+		}
+
 
 		@include screen(medium){
 			height:65px;
+
+			&__mobile-hamburger{
+				display:none;
+			}
 		}
 
 		body.home &{
@@ -45,34 +85,40 @@ header.main-header{
 		}
 
 		.logo{
-			height: 55px;
 			white-space: nowrap;
-		    padding: 18px 20px;
-
-		     @include screen(medium){
-		     	position: absolute;
-			    padding-top:19px;
-		     }
+		  padding: 18px 20px;
 
 			p{
-		    font-size:em(17px);
+		    font-size:em(13px);
 		    letter-spacing: 2px;
 				font-weight:700;
 				font-family:$h-font;
 				color:white;
 			}
+
+			@include screen(medium){
+			 position: absolute;
+			 padding-top:19px;
+
+			 p{
+				 font-size:em(17px);
+			 }
+			}
 		}
 
 		.navigation{
-			display:block;
-			position: absolute;
-	    right: 20px;
-	    top: 0;
-	    height: 55px;
-	    padding: 17px 20px;
-	    @extend %hover-cursor;
 
 			transition: opacity .25s ease-in-out;
+
+			@include screen(medium){
+				position: absolute;
+				display:block;
+		    right: 40px;
+		    top: 0;
+		    height: 55px;
+		    cursor: pointer;
+				overflow: hidden;
+			}
 
 			&:hover{
 				li{
@@ -81,8 +127,9 @@ header.main-header{
 			}
 
 			li{
-				display:inline-block;
-				padding:0 15px;
+				display:block;
+				text-align:center;
+				padding:10px 0;
 
 				&:hover{
 					opacity:1;
@@ -90,9 +137,22 @@ header.main-header{
 
 				p, a{
 					font-family: $h-font;
-					float:left;
 					color:white;
 					line-height: 1.6em;
+				}
+
+				@include screen(medium){
+					display:inline-block;
+					padding:0 15px;
+					padding: 20px 14px;
+				}
+
+				@include screen(mediummiddle){
+					padding: 20px 24px;
+
+					p, a{
+						float:left;
+					}
 				}
 
 			}
@@ -101,10 +161,8 @@ header.main-header{
 		    	right: 0px;
 		    	height:65px;
 		    	// width:200px;
-		    	padding: 23px 24px;
 		    	font-family: $h-font;
 		    	letter-spacing: 0.06em;
-			    text-transform: uppercase;
 					font-size: em(15px);
 		    }
 			}
@@ -138,15 +196,13 @@ header.main-header{
 
 
 .navigation__product-nav{
-	position: fixed;
   width: 100%;
   overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
   height: 100%;
   padding:40px 20px 20px 20px;
   background: black;
-  z-index: 0;
-	transform: translateY(-110%);
+
   transition:transform .2s ease-out;
 
 	&:hover{
@@ -155,17 +211,24 @@ header.main-header{
 		}
 	}
 
-    @include screen(medium){
-    	position: absolute;
-    	top: 65px;
-    	height: auto;
-    	overflow-y: auto;
-    }
+	.nav{
+		opacity:1;
+		transition: opacity .2s ease-out;
+	}
+
+  @include screen(medium){
+  	position: fixed;
+  	top: 65px;
+  	height: auto;
+  	overflow-y: auto;
+		z-index: 0;
+		transform: translateY(-120%);
 
 		.nav{
 			opacity:0;
-			transition: opacity .2s ease-out;
 		}
+  }
+
 
     a{
     	display: block;
@@ -229,6 +292,10 @@ header.main-header{
 		li{
 			float:left;
 
+			@include screen(smallmiddle){
+				width:50%;
+			}
+
 			@include screen(medium){
 				color:white;
 				width:25%;
@@ -283,16 +350,31 @@ body.home .navigation__product-nav{
 
 .navigation__products-link--active{
 	// transition:opacity .3s ease-in-out;
-	.navigation__product-nav{
-		transform: translateY(0%) !important;
+	.navigation{
 
-		.nav{
+		li{
+			opacity:0.6
+		}
 
-			a{
-				transition-delay:.1s;
-			}
-
+		&__products-link:nth-child(1){
 			opacity:1;
+
+			&:after{
+				opacity:1;
+				bottom:0 !important;
+			}
+		}
+		&__product-nav{
+			transform: translateY(0%) !important;
+
+			.nav{
+
+				a{
+					transition-delay:.1s;
+				}
+
+				opacity:1;
+			}
 		}
 	}
 }

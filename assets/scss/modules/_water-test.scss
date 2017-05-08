@@ -24,7 +24,7 @@
 		}
 
 		&__title{
-
+			margin-bottom:20px;
 		}
 
 		&__para{
@@ -173,17 +173,16 @@
 		&__item{
 			height: 42px;
 			position: relative;
-		    width: 42px;
-		    margin: 10px;
-		    font-size: 1.025em;
-		    font-family: $h-font;
-		    padding: 6px 10px;
-		    font-weight: 100;
-		    border: 2px solid $mitap-green;
-		    display: inline-block;
-		    z-index: 10;
-		    opacity:0.4;
-		    background: black;
+	    width: 42px;
+	    margin: 10px;
+	    font-size: 1.025em;
+	    font-family: $h-font;
+	    padding: 8px 10px;
+	    font-weight: 100;
+	    border: 2px solid $mitap-green;
+	    display: inline-block;
+	    z-index: 10;
+	    background: black;
 			@extend %circle;
 
 			@media(min-width:1000px){
@@ -204,8 +203,6 @@
 		.active{
 			background:$mitap-green;
 			border-color:$mitap-green;
-			opacity:1;
-
 
 			p{
 				color:darken($mitap-green, 50);

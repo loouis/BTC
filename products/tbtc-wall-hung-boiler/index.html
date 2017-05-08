@@ -33,57 +33,64 @@
               <p>THE BOILING TAP COMPANY</p>
             </a>
           </div>
+
+          <button class="main-nav__mobile-hamburger">
+            <i></i>
+          </button>
+
           <ul class="navigation">
             <li class="navigation__products-link"><p>Products</p></li>
-            <li class="navigation__menu-button__text" itemprop="name"><a>Pure water</a></li>
-            <li class="navigation__menu-button__text" itemprop="name"><a>Customers</a></li>
+            <li class="navigation__menu-button__text" itemprop="name"><a href="../../pure-water" itemprop="url">Pure water</a></li>
+            <li class="navigation__menu-button__text" itemprop="name"><a href="../../customers/" itemprop="url">Customers</a></li>
             <li class="call-modal-click--main-contact"><p>Contact</p></li>
           </ul>
+
         </div>
-      </div>
-      <div class="navigation__product-nav">
-        <div class="wrapper">
-          <div class="navigation__product-nav__nav__link--contact call-modal-click--main-contact">Contact</div>
 
-          <ul class="nav">
-            <li class="nav__link" itemprop="name">
-              <a href="../../products/illimani/" class="link-fade" itemprop="url">
-                <img src="../../assets/images/product-nav--illimani.png" alt="illimani" itemprop="ImageObject">
-                <p class="nav__link__text" itemprop="name">illimani</p>
-              </a>
-            </li>
+        <div class="navigation__product-nav">
+          <div class="wrapper">
 
-            <li class="nav__link" itemprop="name">
-              <a href="../../products/mitap/" class="link-fade" itemprop="url">
-                <img src="../../assets/images/product-nav--mitap.png" alt="MiTap" itemprop="ImageObject">
-                <p class="nav__link__text" itemprop="name">MiTap</p>
-              </a>
-            </li>
+            <ul class="nav">
+              <li class="nav__link" itemprop="name">
+                <a href="../../products/illimani/" class="link-fade" itemprop="url">
+                  <img src="../../assets/images/product-nav--illimani.png" alt="illimani" itemprop="ImageObject">
+                  <p class="nav__link__text" itemprop="name">illimani</p>
+                </a>
+              </li>
 
-            <li class="nav__link" itemprop="name">
-              <a href="../../products/taofont/" class="link-fade" itemprop="url">
-                <img src="../../assets/images/product-nav--wall-hung-bolier.png" alt="TBTC Wall Hung Boiler" itemprop="ImageObject">
-                <p class="nav__link__text" itemprop="name">TBTC Wall Hung Boiler</p>
-              </a>
-            </li>
+              <li class="nav__link" itemprop="name">
+                <a href="../../products/mitap/" class="link-fade" itemprop="url">
+                  <img src="../../assets/images/product-nav--mitap.png" alt="MiTap" itemprop="ImageObject">
+                  <p class="nav__link__text" itemprop="name">MiTap</p>
+                </a>
+              </li>
 
-            <li class="nav__link" itemprop="name">
-              <a href="../../products/taofont/" class="link-fade" itemprop="url">
-                <img src="../../assets/images/product-nav--taofont.png" alt="TaoFont" itemprop="ImageObject">
-                <p class="nav__link__text" itemprop="name">TaoFont</p>
-              </a>
-            </li>
-          </ul>
+              <li class="nav__link" itemprop="name">
+                <a href="../../products/taofont/" class="link-fade" itemprop="url">
+                  <img src="../../assets/images/product-nav--wall-hung-bolier.png" alt="TBTC Wall Hung Boiler" itemprop="ImageObject">
+                  <p class="nav__link__text" itemprop="name">TBTC Wall Hung Boiler</p>
+                </a>
+              </li>
+
+              <li class="nav__link" itemprop="name">
+                <a href="../../products/taofont/" class="link-fade" itemprop="url">
+                  <img src="../../assets/images/product-nav--taofont.png" alt="TaoFont" itemprop="ImageObject">
+                  <p class="nav__link__text" itemprop="name">TaoFont</p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+
       </div>
+
     </header>
     <header class="sub-nav">
       <nav class="sub-nav__links">
         <div class="fix-sub-header">
           <div class="wrapper">
-            <div class="sub-nav__links__logo sub-nav__links__logo--taofont"><img src="../../assets/images/sub-nav-logo--taofont.png" alt="Taofont - The boiling tap company"></div>
-            <a href="#0" data-scroll-nav="1"><div class="sub-nav__links__link">Features</div></a>
-            <a href="#0" data-scroll-nav="2"><div class="sub-nav__links__link">Font spec</div></a>
+            <a href="#0" data-scroll-nav="0"><div class="sub-nav__links__link">Features</div></a>
+            <a href="#0" data-scroll-nav="1"><div class="sub-nav__links__link">Water</div></a>
             <div class="sub-nav__links__enquire enquire-sub-nav-button call-modal-click--main-contact">Enquire</div>
           </div>
         </div>
@@ -103,16 +110,16 @@
             	<img src="../../assets/images/product-taofont-image--large.jpg" alt="Boiling tap company - TaoFont kitchen worktop font">
             	<![endif]-->
             	<!--[if !lt IE 9]><!-->
-            	<img srcset="assets/images/product-taofont-image--small2x.jpg" alt="Taofont kitchen worktop font - Boiling tap">
+            	<img srcset="assets/images/product-taofont-image--small2x.jpg" data-wow-duration="1.3s" class="fadeInZoom wow" alt="Taofont kitchen worktop font - Boiling tap">
             	 <!-- <![endif]-->
             </picture>
           </div>
         </div>
         <div class="wrapper">
           <div class="product-header__text">
-            <h1 data-wow-delay=".6s" class="product-header__text__title fadeInDown wow">TBTC Wall Hung Boiler</h1>
-            <div data-wow-delay=".65s" class="dark-underline fadeInDown wow"></div>
-            <p data-wow-delay=".9s" class="product-header__text__copy fadeInDown wow">The UK designed TBTC wall hung boiler eliminates limescale, energy efficient and can dispense up to 180 cups per hour.</p>
+            <h1 data-wow-delay=".6s" class="product-header__text__title fadeInLeft wow">TBTC Wall Hung Boiler</h1>
+            <div data-wow-delay="1s" class="dark-underline fadeInLeft wow"></div>
+            <p data-wow-delay=".9s" class="product-header__text__copy fadeInLeft wow">The UK designed TBTC wall hung boiler eliminates limescale, energy efficient and can dispense up to 180 cups per hour.</p>
           </div>
         </div>
       </section>
@@ -125,49 +132,50 @@
           <div class="p-f__image"><img src="../../assets/images/wall-hung-boiler--front-view.png" alt=""></div>
           <div class="p-f__desc">
             <ul class="p-f__pull-out">
-              <li data-wow-duration="1.4s" class="p-f__pull-out__con fadeInLeft wow">
-                <div class="p-f__pull-out__con__icon"><img src="../../assets/images/icon-hot--green.png" alt=""></div>
-                <div class="p-f__pull-out__con__text">
-                  <div class="p-f__pull-out__con__text__title">CAPACITY</div>
-                  <div class="p-f__pull-out__con__text__text">7 Litre Tank</div>
-                </div>
-              </li>
-              <li data-wow-duration="1.4s" class="p-f__pull-out__con fadeInLeft wow">
-                <div class="p-f__pull-out__con__icon"><img src="../../assets/images/icon-chilled--green.png" alt=""></div>
-                <div class="p-f__pull-out__con__text">
-                  <div class="p-f__pull-out__con__text__title">BOILING WATER</div>
-                  <div class="p-f__pull-out__con__text__text">180 cups per hour</div>
-                </div>
-              </li>
-              <li data-wow-delay="1.4s" data-wow-duration="1.4s" class="p-f__pull-out__con fadeInLeft wow">
-                <div class="p-f__pull-out__con__icon"><img src="../../assets/images/icon-timer--green.png" alt=""></div>
-                <div class="p-f__pull-out__con__text">
-                  <div class="p-f__pull-out__con__text__title">TIMER</div>
-                  <div class="p-f__pull-out__con__text__text">Dual timer settings</div>
-                </div>
-              </li>
-              <li data-wow-duration="1.4s" class="p-f__pull-out__con fadeInLeft wow">
+              <li data-wow-delay=".3s" data-wow-duration="1.4s" class="p-f__pull-out__con fadeInLeft wow">
                 <div class="p-f__pull-out__con__icon"><img src="../../assets/images/icon-pure-water--green.png" alt=""></div>
                 <div class="p-f__pull-out__con__text">
                   <div class="p-f__pull-out__con__text__title">PURIFIED WATER</div>
                   <div class="p-f__pull-out__con__text__text">Totally eliminates limescale</div>
                 </div>
               </li>
-              <li data-wow-duration="1.4s" class="p-f__pull-out__con fadeInLeft wow">
+              <li data-wow-delay=".3s" data-wow-duration="1.4s" class="p-f__pull-out__con fadeInLeft wow">
+                <div class="p-f__pull-out__con__icon"><img src="../../assets/images/icon-chilled--green.png" alt=""></div>
+                <div class="p-f__pull-out__con__text">
+                  <div class="p-f__pull-out__con__text__title">BOILING WATER</div>
+                  <div class="p-f__pull-out__con__text__text">180 cups per hour</div>
+                </div>
+              </li>
+              <li data-wow-delay=".5s" data-wow-duration="1.4s" class="p-f__pull-out__con fadeInLeft wow">
+                <div class="p-f__pull-out__con__icon"><img src="../../assets/images/icon-hot--green.png" alt=""></div>
+                <div class="p-f__pull-out__con__text">
+                  <div class="p-f__pull-out__con__text__title">CAPACITY</div>
+                  <div class="p-f__pull-out__con__text__text">7 Litre Tank</div>
+                </div>
+              </li>
+              <li data-wow-delay=".5s" data-wow-duration="1.4s" class="p-f__pull-out__con fadeInLeft wow">
+                <div class="p-f__pull-out__con__icon"><img src="../../assets/images/icon-timer--green.png" alt=""></div>
+                <div class="p-f__pull-out__con__text">
+                  <div class="p-f__pull-out__con__text__title">TIMER</div>
+                  <div class="p-f__pull-out__con__text__text">Dual timer settings</div>
+                </div>
+              </li>
+
+              <li data-wow-delay=".7s" class="p-f__pull-out__con fadeInLeft wow">
                 <div class="p-f__pull-out__con__icon"><img src="../../assets/images/icon-cups--green.png" alt=""></div>
                 <div class="p-f__pull-out__con__text">
                   <div class="p-f__pull-out__con__text__title">ENERGY SAVING</div>
                   <div class="p-f__pull-out__con__text__text">Patented design</div>
                 </div>
               </li>
-              <li data-wow-delay="1.4s" data-wow-duration="1.4s" class="p-f__pull-out__con fadeInLeft wow">
+              <li data-wow-delay=".7s" data-wow-duration="1.4s" class="p-f__pull-out__con fadeInLeft wow">
                 <div class="p-f__pull-out__con__icon"><img src="../../assets/images/icon-timer--green.png" alt=""></div>
                 <div class="p-f__pull-out__con__text">
                   <div class="p-f__pull-out__con__text__title">ALARM</div>
                   <div class="p-f__pull-out__con__text__text">Leak Alarm detector</div>
                 </div>
               </li>
-              <li data-wow-delay="1.4s" data-wow-duration="1.4s" class="p-f__pull-out__con fadeInLeft wow">
+              <li data-wow-delay="1s" data-wow-duration="1.4s" class="p-f__pull-out__con fadeInLeft wow">
                 <div class="p-f__pull-out__con__icon"><img src="../../assets/images/icon-temp--green.png" alt=""></div>
                 <div class="p-f__pull-out__con__text">
                   <div class="p-f__pull-out__con__text__title">75&deg; - 105&deg;</div>
@@ -179,9 +187,7 @@
         </div>
       </section>
 
-      <section id="tasted-pure-water" data-scroll-index="2">
-        <div data-anchor-target="#tasted-pure-water" data-bottom-top="transform: translate(0px, -160px)" data-top-bottom="transform: translate(0, 0)" class="water-splash-1"><img src="../../assets/images/water-splash-1.png" alt=""></div>
-        <div data-anchor-target="#tasted-pure-water" data-bottom-top="transform: translate(-40px, 100px)" data-top-bottom="transform: translate(0, 0)" class="water-splash-2"><img src="../../assets/images/water-splash-2.png" alt=""></div>
+      <section id="tasted-pure-water" data-scroll-index="1">
         <div class="wrapper pure-water">
           <hgroup>
             <h2 class="pure-water__title fadeInLeft wow">Have you ever tasted pure water?</h2>
@@ -399,58 +405,11 @@
         </div>
       </section>
 
-
-      <section id="client-testimonials" class="client-testimonials">
-        <div class="wrapper">
-          <div class="clients__text">
-            <h3 class="clients__text__title">Delighted clients</h3>
-            <div class="testimonial-container testimonial-container--home">
-              <ul class="testimonial-slider testimonial-slider-home">
-                <li class="testimonial-slider__slide testimonial-slider__slide--home">
-                  <p class="testimonial-cell__quote testimonial-cell__quote--home">"The Boiling Tap Company have the best product, the best after sales service and the taps do not have any lime scale, I would recommend them to anyone" </p>
-                </li>
-                <li class="testimonial-slider__slide testimonial-slider__slide--home">
-                  <p class="testimonial-cell__quote testimonial-cell__quote--home">We had untold problems with our previous boiling tap supplier, shabby call outs, lime scale related issues. The Boiling Tap Company’s and the service has been exemplary, the engineers and after sales team are a pleasure to deal with"</p>
-                  <cite class="testimonial-cell__quote__name testimonial-cell__quote--home">Wayne Foster</cite>
-                </li>
-                <li class="testimonial-slider__slide testimonial-slider__slide--home">
-                  <p class="testimonial-cell__quote testimonial-cell__quote--home">"I installed a residential unit into my kitchen in the summer of 2010, I was sceptical that the promise of ‘ eliminating lime-scale’ was achievable; Five years later, no break downs and a scale free tap that looks like new! Fantastic company with the best product on the market" </p>
-                  <cite class="testimonial-cell__quote__name testimonial-cell__quote--home">Kevin Game Stapleford Abbotts</cite>
-                </li>
-                <li class="testimonial-slider__slide testimonial-slider__slide--home">
-                  <p class="testimonial-cell__quote testimonial-cell__quote--home">"We installed four of the high capacity boiling and chilled units into our new offices in August 2010; the units have performed above our expectations and the company has good old fashioned values, integrity and excellent after sales service" </p>
-                  <cite class="testimonial-cell__quote__name testimonial-cell__quote--home">Action Aid London</cite>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="see-all-clients-container">
-          <nav class="testimonial-nav">
-            <ul class="testi-people testi-people--home"><a href="" data-slide-index="0" class="testi-people__person"><img src="../../assets/images/testi-headeshot-shane-wheeler.jpg" alt="">
-                <div class="testi-people__company-logo">
-                  <p>Shane Wheeler</p>
-                </div></a><a href="" data-slide-index="1" class="testi-people__person"><img src="../../assets/images/testi-headeshot-wayne-foster.jpg" alt="">
-                <div class="testi-people__company-logo">
-                  <p>Wayne Foster</p>
-                </div></a><a href="" data-slide-index="2" class="testi-people__person"><img src="../../assets/images/testimonial-headshots--kevin-game.jpg" alt="">
-                <div class="testi-people__company-logo">
-                  <p>Kevin Game</p>
-                </div></a><a href="" data-slide-index="3" class="testi-people__person"><img src="../../assets/images/testimonial-headshots--actionaid.jpg" alt="">
-                <div class="testi-people__company-logo">
-                  <p>Action Aid</p>
-                </div></a></ul>
-          </nav><a href="./our-clients.html">
-            <button class="see-all-clients btn-border">See clients list</button></a>
-        </div>
-      </section>
-
-
       <section class="buy-bullet-points bbp">
         <div class="wrapper">
-          <div class="bbp__product-images"><img src="../../assets/images/mitap-buy-image.png" alt=""></div>
+          <div class="bbp__product-images"><img src="../../assets/images/boiler-buy-image.png" alt=""></div>
           <div class="bbp__text-container">
-            <h2 class="bbp__title">MiTap</h2>
+            <h2 class="bbp__title">TBTC Wall Hung Boiler</h2>
             <div class="bbp__company-product-promise">
               <ul class="promise">
                 <li class="promise__item">
@@ -468,27 +427,45 @@
               </ul>
             </div>
           </div>
-        </div>
-        <div class="buy-product-button-con">
-          <div class="buy-product-shout-out__button light-full-button call-modal-click--main-contact">Enquire now</div>
+          <button class="buy-product-shout-out__button light-full-button call-modal-click--main-contact">Enquire now</button>
         </div>
       </section>
       <section class="more-products">
-        <h4 class="more-products__title">Other products</h4>
-        <ul class="other-products"><a href="./illimani.html">
+        <div class="wrapper">
+          <h4 class="more-products__title">Other products</h4>
+          <ul class="other-products">
             <li class="other-products__product">
-              <div class="other-products__product__image"><img src="../../assets/images/other-products--illimani.jpg" alt=""></div>
-              <div class="other-products__text-container product-brief-desc">
-                <h3 class="product-brief-desc__title">illimani</h3>
-              </div>
-            </li></a><a href="./taofont.html">
+              <a href="../../products/illimani">
+                <div class="other-products__product__image">
+                  <img src="../../assets/images/other-products--illimani.png" alt="">
+                </div>
+                <div class="other-products__text-container product-brief-desc">
+                  <h3 class="product-brief-desc__title">illimani</h3>
+                </div>
+              </a>
+            </li>
             <li class="other-products__product">
-              <div class="other-products__product__image"><img src="../../assets/images/other-products--taofont.jpg" alt=""></div>
-              <div class="other-products__text-container product-brief-desc">
-                <h3 class="product-brief-desc__title">TaoFont</h3>
-              </div>
-            </li></a>
+              <a href="../../products/tbtc-wall-hung-boiler">
+                <div class="other-products__product__image">
+                  <img src="../../assets/images/other-products--mitap.png" alt="">
+                </div>
+                <div class="other-products__text-container product-brief-desc">
+                  <h3 class="product-brief-desc__title">MiTap</h3>
+                </div>
+              </a>
+            </li>
+            <li class="other-products__product">
+              <a href="../../products/taofont">
+                <div class="other-products__product__image">
+                  <img src="../../assets/images/other-products--taofont.png" alt="">
+                </div>
+                <div class="other-products__text-container product-brief-desc">
+                  <h3 class="product-brief-desc__title">TaoFont</h3>
+                </div>
+              </a>
+            </li>
           </ul>
+        </div><!-- //Wrapper -->
       </section>
 
     </main>
@@ -526,47 +503,63 @@
         <div class="modal__close__button">Close</div>
       </div>
     </div>
-    <section class="above-footer-mission-stat">
-      <div class="wrapper">
-        <p class="above-footer-mission-stat__text">The Boiling Tap Company sells UK designed, Boiling and Chilled and  Boiling Taps that are reliable, functional and innovative. Providing filtration and Purification systems that provide probably the purest water on the Planet.</p>
-        <div class="footer__contact-details">
-          <div class="footer__contact-details__address">
-            <p class="footer__contact-details__address__location">Bishops Stortford</p>
-          </div>
-          <div class="footer__contact-details__address">
-            <p class="footer__contact-details__address__location">York</p>
-          </div>
-          <div class="footer__contact-details__address">
-            <p class="footer__contact-details__address__location">Hornchurch</p>
-          </div>
-          <div class="footer__contact-details__address">
-            <p class="footer__contact-details__address__location">Portsmouth</p>
-          </div>
-          <div class="footer__contact-details__address">
-            <p class="footer__contact-details__address__location">Newcastle</p>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <footer class="footer">
       <div class="wrapper">
-        <div class="footer__contact-details__tele-no">
-          <p>0800 080 6696</p>
-        </div>
+        <section class="above-footer-mission-stat">
+          <h4 class="above-footer-mission-stat__logo">THE BOILING TAP COMPANY</h4>
+          <p class="above-footer-mission-stat__text">Sells UK designed, Boiling and Chilled and  Boiling Taps that are reliable, functional and innovative. Providing filtration and Purification systems that provide probably the purest water on the Planet.</p>
+
+          <div class="footer__links-container">
+            <button class="footer__links-btn">
+              <p>Site links</p>
+              <i>
+                <svg version="1.1"
+                	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                	 x="0px" y="0px" width="16px" height="8px" viewBox="0 0 14 8" enable-background="new 0 0 16 8" xml:space="preserve">
+                  <g><path fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                		M7,1"/>
+                		<polyline fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                		1,7 7,1 13,7 	"/>
+                  </g>
+                </svg>
+              </i>
+            </button>
+            <nav class="footer__links" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+              <ul>
+                <li>Products</li>
+                <li class="footer__links__link" itemprop="name"><a href="../../products/illimani/" itemprop="url">illimani</a></li>
+                <li class="footer__links__link" itemprop="name"><a href="../../products/mitap">MiTap</a></li>
+                <li class="footer__links__link" itemprop="name"><a href="../../products/tbtc-wall-hung-boiler">TBTC Wall hung Boiler</a></li>
+                <li class="footer__links__link" itemprop="name"><a href="../../products/taofont">TaoFont</a></li>
+              </ul>
+
+              <ul>
+                <li>Other links</li>
+                <li class="footer__links__link" itemprop="name"><a href="" itemprop="url">Home</a></li>
+                <li class="footer__links__link" itemprop="name"><a href="../customers/" itemprop="url">Customers</a></li>
+                <li class="footer__links__link" itemprop="name"><a href="" itemprop="url">Pure Water</a></li>
+                <li class="footer__links__link" itemprop="name"><a href="#0">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
         <div class="footer__small-footer">
-          <div class="footer__small-footer__page-links"><a href="./illimani.html" class="footer__small-footer__page-links__link link-fade">illimani</a><a href="./mitap.html" class="footer__small-footer__page-links__link link-fade">MiTap</a><a href="./taofont.html" class="footer__small-footer__page-links__link link-fade">TaoFont</a><a href="./our-clients.html" class="footer__small-footer__page-links__link link-fade">Clients</a><a href="#" class="footer__small-footer__page-links__link call-modal-click--main-contact">Contact</a>
-          </div>
-          <div class="footer__small-footer__social-links">
-            <ul class="social-links"><a href="https://www.facebook.com/pages/The-Boiling-Tap-Company/1486520888336220">
-                <li class="social-links__link social-links__link--facebook"><img src="../../assets/images/icon--facebook.png" alt=""></li></a>
-            </ul>
-          </div>
           <div class="footer__small-footer__copyright">
-            <p class="copyright__text">&copy; The boling tap company limited</p>
+            <p class="copyright__text">&copy; 2016 - The Boiling Tap Company Limited</p>
           </div>
         </div>
       </div>
+      <div class="footer__water-splashes">
+        <span class="footer__water-splashes--1">
+          <img src="../../assets/images/water-splash-2.png" alt="">
+        </span>
+        <span class="footer__water-splashes--2">
+          <img src="../../assets/images/water-splash-1.png" alt="">
+        </span>
+      </div>
     </footer>
+
     <aside class="modal modal--main-contact modal--small">
       <div class="modal__con">
         <div class="modal__con__telephone-number">

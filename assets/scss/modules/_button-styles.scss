@@ -16,11 +16,10 @@ $button-width: 300px;
 	font-family:$h-font;
 	font-weight:400;
 	padding: 25px 25px;
-    // border-radius: 30px;
-    letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
  	background:#3C3C3C;
  	text-transform:uppercase;
-    cursor: pointer;
+  cursor: pointer;
 
     &:hover{
     	// @include linearGradient(#0756CC, #1B6FEC);
@@ -45,24 +44,24 @@ $button-width: 300px;
 
 
 	.feedback {
-        position: absolute;
-        width: $button-width * 2;
-        height: $button-width * 2;
-        background-color: rgba(white, 0.5);
-        left: 0;
-        top: 0;
-        border-radius: 50%;
-        margin-left: - $button-width;
-        margin-top: - $button-width;
-        transform: scaleX(0) scaleY(0);
-    }
+    position: absolute;
+    width: $button-width * 2;
+    height: $button-width * 2;
+    background-color: rgba(white, 0.5);
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    margin-left: - $button-width;
+    margin-top: - $button-width;
+    transform: scaleX(0) scaleY(0);
+  }
 }
 
 .light-full-button,{
 	font-size:em(12px);
 	font-family:$h-font;
 	text-transform: uppercase;
-	padding:16px 24px;
+	padding:19px 24px 18px 24px;
 	border-radius:30px;
 	color:#38524D;
 	letter-spacing:0.09em;

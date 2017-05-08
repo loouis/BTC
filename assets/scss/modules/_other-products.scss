@@ -1,9 +1,32 @@
-.other-products{
-	max-width: 800px;
-    margin: 0 auto;
-    padding:60px 20px 100px 20px;
-    @include clearfix;
+.more-products{
+	padding-top:40px;
+	background:black;
+	border-top:1px solid #191919;
 
+	&:hover{
+		.other-products{
+			&__product{
+				opacity:0.6;
+			}
+		}
+
+	}
+
+	&__title{
+		color:white;
+		text-align:center;
+	}
+
+	.wrapper{
+		max-width:1000px;
+	}
+
+}
+
+.other-products{
+  margin: 0 auto;
+  padding:60px 20px 20px 20px;
+  @include clearfix;
 
 	&__product{
 		position:relative;
@@ -12,21 +35,32 @@
 		color:white;
 		overflow:hidden;
 		margin-bottom:20px;
-		
-		&:nth-child(2){
-			// background:lighten(black, 20);
+		transform: scale(0.9);
+
+
+		&:hover{
+			opacity:1 !important;
+
+			.other-products__product__image{
+				transform: scale(1);
+			}
 		}
 
 		@include screen(medium){
-			@include span(6 of 12);
+			@include span(4 of 12);
+
+			transition: all .25s ease-in-out;
 		}
 
-		&__image{	
+		&__image{
 			display: inline-block;
-			max-width:350px;
-			background:black;
+			max-width:240px;
 			margin: 0 auto;
-    		display: block;
+    	display: block;
+			transform: scale(0.92);
+			transform-origin: bottom;
+			transition: transform .3s ease-in-out;
+
 
 			&:nth-child(2){
 				float:right;

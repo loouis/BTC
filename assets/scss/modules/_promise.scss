@@ -1,12 +1,11 @@
 .promise{
-	// background:lighten($l-grey, 38);
 	@include clearfix;
 	padding:$s-20 0px;
 
 	@include screen(medium){
 		padding:20px 0em;
 		max-width: 530px;
-    	margin: 0 auto;
+    margin: 0 auto 30px auto;
 	}
 
 	&__item{

@@ -195,6 +195,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 
+@keyframes fadeInZoom {
+  0% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fadeInZoom {
+  -webkit-animation-name: fadeInZoom;
+  animation-name: fadeInZoom;
+}
+
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1002,5 +1020,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(2000px);
   }
 }
-
-
